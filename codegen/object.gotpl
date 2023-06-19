@@ -53,7 +53,7 @@ func (ec *executionContext) _{{$object.Name}}(ctx context.Context, sel ast.Selec
                             ec.Error(ctx, ec.Recover(ctx, r))
                         }
                     }()
-                    res = ec._{{$object.Name}}_{{$field.Name}}(ctx, field{{if not $object.Root}}, obj{{end}})
+                    res = _{{$object.Name}}_{{$field.Name}}(ctx, ec, field{{if not $object.Root}}, obj{{end}})
                     {{- if $field.TypeReference.GQL.NonNull }}
                         if res == graphql.Null {
                             {{- if $object.IsConcurrent }}
@@ -82,10 +82,10 @@ func (ec *executionContext) _{{$object.Name}}(ctx context.Context, sel ast.Selec
             {{- else }}
                 {{if $object.Root}}
                     out.Values[i] = ec.OperationContext.RootResolverMiddleware(innerCtx, func(ctx context.Context) (res graphql.Marshaler) {
-                        return ec._{{$object.Name}}_{{$field.Name}}(ctx, field)
+                        return _{{$object.Name}}_{{$field.Name}}(ctx, ec, field)
                     })
                 {{else}}
-                    out.Values[i] = ec._{{$object.Name}}_{{$field.Name}}(ctx, field, obj)
+                    out.Values[i] = _{{$object.Name}}_{{$field.Name}}(ctx, ec, field, obj)
                 {{end}}
 
                 {{- if $field.TypeReference.GQL.NonNull }}

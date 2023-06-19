@@ -1,11 +1,11 @@
 {{- range $object := .Objects }}{{- range $field := $object.Fields }}
 
-func (ec *executionContext) _{{$object.Name}}_{{$field.Name}}(ctx context.Context, field graphql.CollectedField{{ if not $object.Root }}, obj {{$object.Reference | ref}}{{end}}) (ret {{ if $object.Stream }}func(ctx context.Context){{ end }}graphql.Marshaler) {
+func _{{$object.Name}}_{{$field.Name}}(ctx context.Context, ec *executionContext, field graphql.CollectedField{{ if not $object.Root }}, obj {{$object.Reference | ref}}{{end}}) (ret {{ if $object.Stream }}func(ctx context.Context){{ end }}graphql.Marshaler) {
 	{{- $null := "graphql.Null" }}
 	{{- if $object.Stream }}
 		{{- $null = "nil" }}
 	{{- end }}
-	fc, err := ec.{{ $field.FieldContextFunc }}(ctx, field)
+	fc, err := {{ $field.FieldContextFunc }}(ctx, ec, field)
 	if err != nil {
 		return {{ $null }}
 	}
@@ -58,7 +58,7 @@ func (ec *executionContext) _{{$object.Name}}_{{$field.Name}}(ctx context.Contex
 	{{- end }}
 }
 
-func (ec *executionContext) {{ $field.FieldContextFunc }}(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func {{ $field.FieldContextFunc }}(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object: {{quote $field.Object.Name}},
 		Field: field,
@@ -73,7 +73,7 @@ func (ec *executionContext) {{ $field.FieldContextFunc }}(ctx context.Context, f
 				switch field.Name {
 					{{- range $f := $field.TypeReference.Definition.Fields }}
 						case "{{ $f.Name }}":
-							return ec.{{ $field.ChildFieldContextFunc $f.Name }}(ctx, field)
+							return {{ $field.ChildFieldContextFunc $f.Name }}(ctx, ec, field)
 					{{- end }}
 				}
 				return nil, fmt.Errorf("no field named %q was found under type {{ $field.TypeReference.Definition.Name }}", field.Name)
