@@ -36,8 +36,8 @@ type ErrorsResolver interface {
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _Error_id(ctx context.Context, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Error_id(ctx, field)
+func _Error_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Error_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -64,7 +64,7 @@ func (ec *executionContext) _Error_id(ctx context.Context, field graphql.Collect
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Error_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Error_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Error",
 		Field:      field,
@@ -77,8 +77,8 @@ func (ec *executionContext) fieldContext_Error_id(ctx context.Context, field gra
 	return fc, nil
 }
 
-func (ec *executionContext) _Error_errorOnNonRequiredField(ctx context.Context, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Error_errorOnNonRequiredField(ctx, field)
+func _Error_errorOnNonRequiredField(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Error_errorOnNonRequiredField(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -102,7 +102,7 @@ func (ec *executionContext) _Error_errorOnNonRequiredField(ctx context.Context, 
 	return ec.marshalOString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Error_errorOnNonRequiredField(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Error_errorOnNonRequiredField(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Error",
 		Field:      field,
@@ -115,8 +115,8 @@ func (ec *executionContext) fieldContext_Error_errorOnNonRequiredField(ctx conte
 	return fc, nil
 }
 
-func (ec *executionContext) _Error_errorOnRequiredField(ctx context.Context, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Error_errorOnRequiredField(ctx, field)
+func _Error_errorOnRequiredField(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Error_errorOnRequiredField(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -143,7 +143,7 @@ func (ec *executionContext) _Error_errorOnRequiredField(ctx context.Context, fie
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Error_errorOnRequiredField(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Error_errorOnRequiredField(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Error",
 		Field:      field,
@@ -156,8 +156,8 @@ func (ec *executionContext) fieldContext_Error_errorOnRequiredField(ctx context.
 	return fc, nil
 }
 
-func (ec *executionContext) _Error_nilOnRequiredField(ctx context.Context, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Error_nilOnRequiredField(ctx, field)
+func _Error_nilOnRequiredField(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Error) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Error_nilOnRequiredField(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -184,7 +184,7 @@ func (ec *executionContext) _Error_nilOnRequiredField(ctx context.Context, field
 	return ec.marshalNString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Error_nilOnRequiredField(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Error_nilOnRequiredField(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Error",
 		Field:      field,
@@ -197,8 +197,8 @@ func (ec *executionContext) fieldContext_Error_nilOnRequiredField(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _Errors_a(ctx context.Context, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Errors_a(ctx, field)
+func _Errors_a(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Errors_a(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -225,7 +225,7 @@ func (ec *executionContext) _Errors_a(ctx context.Context, field graphql.Collect
 	return ec.marshalNError2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐError(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Errors_a(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Errors_a(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Errors",
 		Field:      field,
@@ -234,13 +234,13 @@ func (ec *executionContext) fieldContext_Errors_a(ctx context.Context, field gra
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "id":
-				return ec.fieldContext_Error_id(ctx, field)
+				return fieldContext_Error_id(ctx, ec, field)
 			case "errorOnNonRequiredField":
-				return ec.fieldContext_Error_errorOnNonRequiredField(ctx, field)
+				return fieldContext_Error_errorOnNonRequiredField(ctx, ec, field)
 			case "errorOnRequiredField":
-				return ec.fieldContext_Error_errorOnRequiredField(ctx, field)
+				return fieldContext_Error_errorOnRequiredField(ctx, ec, field)
 			case "nilOnRequiredField":
-				return ec.fieldContext_Error_nilOnRequiredField(ctx, field)
+				return fieldContext_Error_nilOnRequiredField(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type Error", field.Name)
 		},
@@ -248,8 +248,8 @@ func (ec *executionContext) fieldContext_Errors_a(ctx context.Context, field gra
 	return fc, nil
 }
 
-func (ec *executionContext) _Errors_b(ctx context.Context, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Errors_b(ctx, field)
+func _Errors_b(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Errors_b(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -276,7 +276,7 @@ func (ec *executionContext) _Errors_b(ctx context.Context, field graphql.Collect
 	return ec.marshalNError2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐError(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Errors_b(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Errors_b(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Errors",
 		Field:      field,
@@ -285,13 +285,13 @@ func (ec *executionContext) fieldContext_Errors_b(ctx context.Context, field gra
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "id":
-				return ec.fieldContext_Error_id(ctx, field)
+				return fieldContext_Error_id(ctx, ec, field)
 			case "errorOnNonRequiredField":
-				return ec.fieldContext_Error_errorOnNonRequiredField(ctx, field)
+				return fieldContext_Error_errorOnNonRequiredField(ctx, ec, field)
 			case "errorOnRequiredField":
-				return ec.fieldContext_Error_errorOnRequiredField(ctx, field)
+				return fieldContext_Error_errorOnRequiredField(ctx, ec, field)
 			case "nilOnRequiredField":
-				return ec.fieldContext_Error_nilOnRequiredField(ctx, field)
+				return fieldContext_Error_nilOnRequiredField(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type Error", field.Name)
 		},
@@ -299,8 +299,8 @@ func (ec *executionContext) fieldContext_Errors_b(ctx context.Context, field gra
 	return fc, nil
 }
 
-func (ec *executionContext) _Errors_c(ctx context.Context, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Errors_c(ctx, field)
+func _Errors_c(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Errors_c(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -327,7 +327,7 @@ func (ec *executionContext) _Errors_c(ctx context.Context, field graphql.Collect
 	return ec.marshalNError2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐError(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Errors_c(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Errors_c(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Errors",
 		Field:      field,
@@ -336,13 +336,13 @@ func (ec *executionContext) fieldContext_Errors_c(ctx context.Context, field gra
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "id":
-				return ec.fieldContext_Error_id(ctx, field)
+				return fieldContext_Error_id(ctx, ec, field)
 			case "errorOnNonRequiredField":
-				return ec.fieldContext_Error_errorOnNonRequiredField(ctx, field)
+				return fieldContext_Error_errorOnNonRequiredField(ctx, ec, field)
 			case "errorOnRequiredField":
-				return ec.fieldContext_Error_errorOnRequiredField(ctx, field)
+				return fieldContext_Error_errorOnRequiredField(ctx, ec, field)
 			case "nilOnRequiredField":
-				return ec.fieldContext_Error_nilOnRequiredField(ctx, field)
+				return fieldContext_Error_nilOnRequiredField(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type Error", field.Name)
 		},
@@ -350,8 +350,8 @@ func (ec *executionContext) fieldContext_Errors_c(ctx context.Context, field gra
 	return fc, nil
 }
 
-func (ec *executionContext) _Errors_d(ctx context.Context, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Errors_d(ctx, field)
+func _Errors_d(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Errors_d(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -378,7 +378,7 @@ func (ec *executionContext) _Errors_d(ctx context.Context, field graphql.Collect
 	return ec.marshalNError2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐError(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Errors_d(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Errors_d(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Errors",
 		Field:      field,
@@ -387,13 +387,13 @@ func (ec *executionContext) fieldContext_Errors_d(ctx context.Context, field gra
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "id":
-				return ec.fieldContext_Error_id(ctx, field)
+				return fieldContext_Error_id(ctx, ec, field)
 			case "errorOnNonRequiredField":
-				return ec.fieldContext_Error_errorOnNonRequiredField(ctx, field)
+				return fieldContext_Error_errorOnNonRequiredField(ctx, ec, field)
 			case "errorOnRequiredField":
-				return ec.fieldContext_Error_errorOnRequiredField(ctx, field)
+				return fieldContext_Error_errorOnRequiredField(ctx, ec, field)
 			case "nilOnRequiredField":
-				return ec.fieldContext_Error_nilOnRequiredField(ctx, field)
+				return fieldContext_Error_nilOnRequiredField(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type Error", field.Name)
 		},
@@ -401,8 +401,8 @@ func (ec *executionContext) fieldContext_Errors_d(ctx context.Context, field gra
 	return fc, nil
 }
 
-func (ec *executionContext) _Errors_e(ctx context.Context, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Errors_e(ctx, field)
+func _Errors_e(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Errors) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Errors_e(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -429,7 +429,7 @@ func (ec *executionContext) _Errors_e(ctx context.Context, field graphql.Collect
 	return ec.marshalNError2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐError(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Errors_e(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Errors_e(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Errors",
 		Field:      field,
@@ -438,13 +438,13 @@ func (ec *executionContext) fieldContext_Errors_e(ctx context.Context, field gra
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "id":
-				return ec.fieldContext_Error_id(ctx, field)
+				return fieldContext_Error_id(ctx, ec, field)
 			case "errorOnNonRequiredField":
-				return ec.fieldContext_Error_errorOnNonRequiredField(ctx, field)
+				return fieldContext_Error_errorOnNonRequiredField(ctx, ec, field)
 			case "errorOnRequiredField":
-				return ec.fieldContext_Error_errorOnRequiredField(ctx, field)
+				return fieldContext_Error_errorOnRequiredField(ctx, ec, field)
 			case "nilOnRequiredField":
-				return ec.fieldContext_Error_nilOnRequiredField(ctx, field)
+				return fieldContext_Error_nilOnRequiredField(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type Error", field.Name)
 		},
@@ -476,25 +476,25 @@ func (ec *executionContext) _Error(ctx context.Context, sel ast.SelectionSet, ob
 			out.Values[i] = graphql.MarshalString("Error")
 		case "id":
 
-			out.Values[i] = ec._Error_id(ctx, field, obj)
+			out.Values[i] = _Error_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "errorOnNonRequiredField":
 
-			out.Values[i] = ec._Error_errorOnNonRequiredField(ctx, field, obj)
+			out.Values[i] = _Error_errorOnNonRequiredField(ctx, ec, field, obj)
 
 		case "errorOnRequiredField":
 
-			out.Values[i] = ec._Error_errorOnRequiredField(ctx, field, obj)
+			out.Values[i] = _Error_errorOnRequiredField(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "nilOnRequiredField":
 
-			out.Values[i] = ec._Error_nilOnRequiredField(ctx, field, obj)
+			out.Values[i] = _Error_nilOnRequiredField(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -529,7 +529,7 @@ func (ec *executionContext) _Errors(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Errors_a(ctx, field, obj)
+				res = _Errors_a(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -549,7 +549,7 @@ func (ec *executionContext) _Errors(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Errors_b(ctx, field, obj)
+				res = _Errors_b(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -569,7 +569,7 @@ func (ec *executionContext) _Errors(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Errors_c(ctx, field, obj)
+				res = _Errors_c(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -589,7 +589,7 @@ func (ec *executionContext) _Errors(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Errors_d(ctx, field, obj)
+				res = _Errors_d(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -609,7 +609,7 @@ func (ec *executionContext) _Errors(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Errors_e(ctx, field, obj)
+				res = _Errors_e(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}

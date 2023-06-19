@@ -281,8 +281,8 @@ func (ec *executionContext) field_ValidType_validInputKeywords_args(ctx context.
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _Content_Post_foo(ctx context.Context, field graphql.CollectedField, obj *ContentPost) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Content_Post_foo(ctx, field)
+func _Content_Post_foo(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ContentPost) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Content_Post_foo(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -306,7 +306,7 @@ func (ec *executionContext) _Content_Post_foo(ctx context.Context, field graphql
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Content_Post_foo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Content_Post_foo(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Content_Post",
 		Field:      field,
@@ -319,8 +319,8 @@ func (ec *executionContext) fieldContext_Content_Post_foo(ctx context.Context, f
 	return fc, nil
 }
 
-func (ec *executionContext) _Content_User_foo(ctx context.Context, field graphql.CollectedField, obj *ContentUser) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Content_User_foo(ctx, field)
+func _Content_User_foo(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ContentUser) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Content_User_foo(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -344,7 +344,7 @@ func (ec *executionContext) _Content_User_foo(ctx context.Context, field graphql
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Content_User_foo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Content_User_foo(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Content_User",
 		Field:      field,
@@ -357,8 +357,8 @@ func (ec *executionContext) fieldContext_Content_User_foo(ctx context.Context, f
 	return fc, nil
 }
 
-func (ec *executionContext) _ValidType_differentCase(ctx context.Context, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ValidType_differentCase(ctx, field)
+func _ValidType_differentCase(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ValidType_differentCase(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -385,7 +385,7 @@ func (ec *executionContext) _ValidType_differentCase(ctx context.Context, field 
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ValidType_differentCase(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ValidType_differentCase(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ValidType",
 		Field:      field,
@@ -398,8 +398,8 @@ func (ec *executionContext) fieldContext_ValidType_differentCase(ctx context.Con
 	return fc, nil
 }
 
-func (ec *executionContext) _ValidType_different_case(ctx context.Context, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ValidType_different_case(ctx, field)
+func _ValidType_different_case(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ValidType_different_case(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -426,7 +426,7 @@ func (ec *executionContext) _ValidType_different_case(ctx context.Context, field
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ValidType_different_case(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ValidType_different_case(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ValidType",
 		Field:      field,
@@ -439,8 +439,8 @@ func (ec *executionContext) fieldContext_ValidType_different_case(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _ValidType_validInputKeywords(ctx context.Context, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ValidType_validInputKeywords(ctx, field)
+func _ValidType_validInputKeywords(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ValidType_validInputKeywords(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -467,7 +467,7 @@ func (ec *executionContext) _ValidType_validInputKeywords(ctx context.Context, f
 	return ec.marshalNBoolean2bool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ValidType_validInputKeywords(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ValidType_validInputKeywords(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ValidType",
 		Field:      field,
@@ -491,8 +491,8 @@ func (ec *executionContext) fieldContext_ValidType_validInputKeywords(ctx contex
 	return fc, nil
 }
 
-func (ec *executionContext) _ValidType_validArgs(ctx context.Context, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ValidType_validArgs(ctx, field)
+func _ValidType_validArgs(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ValidType) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ValidType_validArgs(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -519,7 +519,7 @@ func (ec *executionContext) _ValidType_validArgs(ctx context.Context, field grap
 	return ec.marshalNBoolean2bool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ValidType_validArgs(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ValidType_validArgs(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ValidType",
 		Field:      field,
@@ -813,7 +813,7 @@ func (ec *executionContext) _Content_Post(ctx context.Context, sel ast.Selection
 			out.Values[i] = graphql.MarshalString("Content_Post")
 		case "foo":
 
-			out.Values[i] = ec._Content_Post_foo(ctx, field, obj)
+			out.Values[i] = _Content_Post_foo(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
@@ -838,7 +838,7 @@ func (ec *executionContext) _Content_User(ctx context.Context, sel ast.Selection
 			out.Values[i] = graphql.MarshalString("Content_User")
 		case "foo":
 
-			out.Values[i] = ec._Content_User_foo(ctx, field, obj)
+			out.Values[i] = _Content_User_foo(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
@@ -863,28 +863,28 @@ func (ec *executionContext) _ValidType(ctx context.Context, sel ast.SelectionSet
 			out.Values[i] = graphql.MarshalString("ValidType")
 		case "differentCase":
 
-			out.Values[i] = ec._ValidType_differentCase(ctx, field, obj)
+			out.Values[i] = _ValidType_differentCase(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "different_case":
 
-			out.Values[i] = ec._ValidType_different_case(ctx, field, obj)
+			out.Values[i] = _ValidType_different_case(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "validInputKeywords":
 
-			out.Values[i] = ec._ValidType_validInputKeywords(ctx, field, obj)
+			out.Values[i] = _ValidType_validInputKeywords(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "validArgs":
 
-			out.Values[i] = ec._ValidType_validArgs(ctx, field, obj)
+			out.Values[i] = _ValidType_validArgs(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++

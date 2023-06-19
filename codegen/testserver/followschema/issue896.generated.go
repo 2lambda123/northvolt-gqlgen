@@ -26,8 +26,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _CheckIssue896_id(ctx context.Context, field graphql.CollectedField, obj *CheckIssue896) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_CheckIssue896_id(ctx, field)
+func _CheckIssue896_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *CheckIssue896) (ret graphql.Marshaler) {
+	fc, err := fieldContext_CheckIssue896_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -51,7 +51,7 @@ func (ec *executionContext) _CheckIssue896_id(ctx context.Context, field graphql
 	return ec.marshalOInt2ᚖint(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_CheckIssue896_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_CheckIssue896_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "CheckIssue896",
 		Field:      field,
@@ -88,7 +88,7 @@ func (ec *executionContext) _CheckIssue896(ctx context.Context, sel ast.Selectio
 			out.Values[i] = graphql.MarshalString("CheckIssue896")
 		case "id":
 
-			out.Values[i] = ec._CheckIssue896_id(ctx, field, obj)
+			out.Values[i] = _CheckIssue896_id(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

@@ -26,8 +26,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _PtrToPtrInner_key(ctx context.Context, field graphql.CollectedField, obj *PtrToPtrInner) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PtrToPtrInner_key(ctx, field)
+func _PtrToPtrInner_key(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PtrToPtrInner) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PtrToPtrInner_key(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -54,7 +54,7 @@ func (ec *executionContext) _PtrToPtrInner_key(ctx context.Context, field graphq
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PtrToPtrInner_key(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PtrToPtrInner_key(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PtrToPtrInner",
 		Field:      field,
@@ -67,8 +67,8 @@ func (ec *executionContext) fieldContext_PtrToPtrInner_key(ctx context.Context, 
 	return fc, nil
 }
 
-func (ec *executionContext) _PtrToPtrInner_value(ctx context.Context, field graphql.CollectedField, obj *PtrToPtrInner) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PtrToPtrInner_value(ctx, field)
+func _PtrToPtrInner_value(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PtrToPtrInner) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PtrToPtrInner_value(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -95,7 +95,7 @@ func (ec *executionContext) _PtrToPtrInner_value(ctx context.Context, field grap
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PtrToPtrInner_value(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PtrToPtrInner_value(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PtrToPtrInner",
 		Field:      field,
@@ -108,8 +108,8 @@ func (ec *executionContext) fieldContext_PtrToPtrInner_value(ctx context.Context
 	return fc, nil
 }
 
-func (ec *executionContext) _PtrToPtrOuter_name(ctx context.Context, field graphql.CollectedField, obj *PtrToPtrOuter) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PtrToPtrOuter_name(ctx, field)
+func _PtrToPtrOuter_name(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PtrToPtrOuter) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PtrToPtrOuter_name(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -136,7 +136,7 @@ func (ec *executionContext) _PtrToPtrOuter_name(ctx context.Context, field graph
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PtrToPtrOuter_name(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PtrToPtrOuter_name(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PtrToPtrOuter",
 		Field:      field,
@@ -149,8 +149,8 @@ func (ec *executionContext) fieldContext_PtrToPtrOuter_name(ctx context.Context,
 	return fc, nil
 }
 
-func (ec *executionContext) _PtrToPtrOuter_inner(ctx context.Context, field graphql.CollectedField, obj *PtrToPtrOuter) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PtrToPtrOuter_inner(ctx, field)
+func _PtrToPtrOuter_inner(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PtrToPtrOuter) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PtrToPtrOuter_inner(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -174,7 +174,7 @@ func (ec *executionContext) _PtrToPtrOuter_inner(ctx context.Context, field grap
 	return ec.marshalOPtrToPtrInner2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐPtrToPtrInner(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PtrToPtrOuter_inner(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PtrToPtrOuter_inner(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PtrToPtrOuter",
 		Field:      field,
@@ -183,9 +183,9 @@ func (ec *executionContext) fieldContext_PtrToPtrOuter_inner(ctx context.Context
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "key":
-				return ec.fieldContext_PtrToPtrInner_key(ctx, field)
+				return fieldContext_PtrToPtrInner_key(ctx, ec, field)
 			case "value":
-				return ec.fieldContext_PtrToPtrInner_value(ctx, field)
+				return fieldContext_PtrToPtrInner_value(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type PtrToPtrInner", field.Name)
 		},
@@ -193,8 +193,8 @@ func (ec *executionContext) fieldContext_PtrToPtrOuter_inner(ctx context.Context
 	return fc, nil
 }
 
-func (ec *executionContext) _PtrToPtrOuter_stupidInner(ctx context.Context, field graphql.CollectedField, obj *PtrToPtrOuter) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PtrToPtrOuter_stupidInner(ctx, field)
+func _PtrToPtrOuter_stupidInner(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PtrToPtrOuter) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PtrToPtrOuter_stupidInner(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -218,7 +218,7 @@ func (ec *executionContext) _PtrToPtrOuter_stupidInner(ctx context.Context, fiel
 	return ec.marshalOPtrToPtrInner2ᚖᚖᚖᚖᚖᚖᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐPtrToPtrInner(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PtrToPtrOuter_stupidInner(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PtrToPtrOuter_stupidInner(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PtrToPtrOuter",
 		Field:      field,
@@ -227,9 +227,9 @@ func (ec *executionContext) fieldContext_PtrToPtrOuter_stupidInner(ctx context.C
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "key":
-				return ec.fieldContext_PtrToPtrInner_key(ctx, field)
+				return fieldContext_PtrToPtrInner_key(ctx, ec, field)
 			case "value":
-				return ec.fieldContext_PtrToPtrInner_value(ctx, field)
+				return fieldContext_PtrToPtrInner_value(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type PtrToPtrInner", field.Name)
 		},
@@ -331,14 +331,14 @@ func (ec *executionContext) _PtrToPtrInner(ctx context.Context, sel ast.Selectio
 			out.Values[i] = graphql.MarshalString("PtrToPtrInner")
 		case "key":
 
-			out.Values[i] = ec._PtrToPtrInner_key(ctx, field, obj)
+			out.Values[i] = _PtrToPtrInner_key(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "value":
 
-			out.Values[i] = ec._PtrToPtrInner_value(ctx, field, obj)
+			out.Values[i] = _PtrToPtrInner_value(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -366,18 +366,18 @@ func (ec *executionContext) _PtrToPtrOuter(ctx context.Context, sel ast.Selectio
 			out.Values[i] = graphql.MarshalString("PtrToPtrOuter")
 		case "name":
 
-			out.Values[i] = ec._PtrToPtrOuter_name(ctx, field, obj)
+			out.Values[i] = _PtrToPtrOuter_name(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "inner":
 
-			out.Values[i] = ec._PtrToPtrOuter_inner(ctx, field, obj)
+			out.Values[i] = _PtrToPtrOuter_inner(ctx, ec, field, obj)
 
 		case "stupidInner":
 
-			out.Values[i] = ec._PtrToPtrOuter_stupidInner(ctx, field, obj)
+			out.Values[i] = _PtrToPtrOuter_stupidInner(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

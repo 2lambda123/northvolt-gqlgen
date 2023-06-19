@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _EmbeddedDefaultScalar_value(ctx context.Context, field graphql.CollectedField, obj *EmbeddedDefaultScalar) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_EmbeddedDefaultScalar_value(ctx, field)
+func _EmbeddedDefaultScalar_value(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *EmbeddedDefaultScalar) (ret graphql.Marshaler) {
+	fc, err := fieldContext_EmbeddedDefaultScalar_value(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -50,7 +50,7 @@ func (ec *executionContext) _EmbeddedDefaultScalar_value(ctx context.Context, fi
 	return ec.marshalODefaultScalarImplementation2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_EmbeddedDefaultScalar_value(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_EmbeddedDefaultScalar_value(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "EmbeddedDefaultScalar",
 		Field:      field,
@@ -87,7 +87,7 @@ func (ec *executionContext) _EmbeddedDefaultScalar(ctx context.Context, sel ast.
 			out.Values[i] = graphql.MarshalString("EmbeddedDefaultScalar")
 		case "value":
 
-			out.Values[i] = ec._EmbeddedDefaultScalar_value(ctx, field, obj)
+			out.Values[i] = _EmbeddedDefaultScalar_value(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

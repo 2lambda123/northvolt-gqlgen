@@ -36,8 +36,8 @@ type PrimitiveStringResolver interface {
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _Primitive_value(ctx context.Context, field graphql.CollectedField, obj *Primitive) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Primitive_value(ctx, field)
+func _Primitive_value(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Primitive) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Primitive_value(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -64,7 +64,7 @@ func (ec *executionContext) _Primitive_value(ctx context.Context, field graphql.
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Primitive_value(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Primitive_value(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Primitive",
 		Field:      field,
@@ -77,8 +77,8 @@ func (ec *executionContext) fieldContext_Primitive_value(ctx context.Context, fi
 	return fc, nil
 }
 
-func (ec *executionContext) _Primitive_squared(ctx context.Context, field graphql.CollectedField, obj *Primitive) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Primitive_squared(ctx, field)
+func _Primitive_squared(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Primitive) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Primitive_squared(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -105,7 +105,7 @@ func (ec *executionContext) _Primitive_squared(ctx context.Context, field graphq
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Primitive_squared(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Primitive_squared(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Primitive",
 		Field:      field,
@@ -118,8 +118,8 @@ func (ec *executionContext) fieldContext_Primitive_squared(ctx context.Context, 
 	return fc, nil
 }
 
-func (ec *executionContext) _PrimitiveString_value(ctx context.Context, field graphql.CollectedField, obj *PrimitiveString) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PrimitiveString_value(ctx, field)
+func _PrimitiveString_value(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PrimitiveString) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PrimitiveString_value(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -146,7 +146,7 @@ func (ec *executionContext) _PrimitiveString_value(ctx context.Context, field gr
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PrimitiveString_value(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PrimitiveString_value(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PrimitiveString",
 		Field:      field,
@@ -159,8 +159,8 @@ func (ec *executionContext) fieldContext_PrimitiveString_value(ctx context.Conte
 	return fc, nil
 }
 
-func (ec *executionContext) _PrimitiveString_doubled(ctx context.Context, field graphql.CollectedField, obj *PrimitiveString) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PrimitiveString_doubled(ctx, field)
+func _PrimitiveString_doubled(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PrimitiveString) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PrimitiveString_doubled(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -187,7 +187,7 @@ func (ec *executionContext) _PrimitiveString_doubled(ctx context.Context, field 
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PrimitiveString_doubled(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PrimitiveString_doubled(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PrimitiveString",
 		Field:      field,
@@ -200,8 +200,8 @@ func (ec *executionContext) fieldContext_PrimitiveString_doubled(ctx context.Con
 	return fc, nil
 }
 
-func (ec *executionContext) _PrimitiveString_len(ctx context.Context, field graphql.CollectedField, obj *PrimitiveString) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PrimitiveString_len(ctx, field)
+func _PrimitiveString_len(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PrimitiveString) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PrimitiveString_len(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -228,7 +228,7 @@ func (ec *executionContext) _PrimitiveString_len(ctx context.Context, field grap
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PrimitiveString_len(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PrimitiveString_len(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PrimitiveString",
 		Field:      field,
@@ -272,7 +272,7 @@ func (ec *executionContext) _Primitive(ctx context.Context, sel ast.SelectionSet
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Primitive_value(ctx, field, obj)
+				res = _Primitive_value(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -285,7 +285,7 @@ func (ec *executionContext) _Primitive(ctx context.Context, sel ast.SelectionSet
 			})
 		case "squared":
 
-			out.Values[i] = ec._Primitive_squared(ctx, field, obj)
+			out.Values[i] = _Primitive_squared(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				atomic.AddUint32(&invalids, 1)
@@ -320,7 +320,7 @@ func (ec *executionContext) _PrimitiveString(ctx context.Context, sel ast.Select
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._PrimitiveString_value(ctx, field, obj)
+				res = _PrimitiveString_value(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -333,7 +333,7 @@ func (ec *executionContext) _PrimitiveString(ctx context.Context, sel ast.Select
 			})
 		case "doubled":
 
-			out.Values[i] = ec._PrimitiveString_doubled(ctx, field, obj)
+			out.Values[i] = _PrimitiveString_doubled(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				atomic.AddUint32(&invalids, 1)
@@ -347,7 +347,7 @@ func (ec *executionContext) _PrimitiveString(ctx context.Context, sel ast.Select
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._PrimitiveString_len(ctx, field, obj)
+				res = _PrimitiveString_len(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}

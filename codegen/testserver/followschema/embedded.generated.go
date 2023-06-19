@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx context.Context, field graphql.CollectedField, obj *EmbeddedCase1) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx, field)
+func _EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *EmbeddedCase1) (ret graphql.Marshaler) {
+	fc, err := fieldContext_EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -53,7 +53,7 @@ func (ec *executionContext) _EmbeddedCase1_exportedEmbeddedPointerExportedMethod
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "EmbeddedCase1",
 		Field:      field,
@@ -66,8 +66,8 @@ func (ec *executionContext) fieldContext_EmbeddedCase1_exportedEmbeddedPointerEx
 	return fc, nil
 }
 
-func (ec *executionContext) _EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx context.Context, field graphql.CollectedField, obj *EmbeddedCase2) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx, field)
+func _EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *EmbeddedCase2) (ret graphql.Marshaler) {
+	fc, err := fieldContext_EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -94,7 +94,7 @@ func (ec *executionContext) _EmbeddedCase2_unexportedEmbeddedPointerExportedMeth
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "EmbeddedCase2",
 		Field:      field,
@@ -107,8 +107,8 @@ func (ec *executionContext) fieldContext_EmbeddedCase2_unexportedEmbeddedPointer
 	return fc, nil
 }
 
-func (ec *executionContext) _EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx context.Context, field graphql.CollectedField, obj *EmbeddedCase3) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx, field)
+func _EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *EmbeddedCase3) (ret graphql.Marshaler) {
+	fc, err := fieldContext_EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -135,7 +135,7 @@ func (ec *executionContext) _EmbeddedCase3_unexportedEmbeddedInterfaceExportedMe
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "EmbeddedCase3",
 		Field:      field,
@@ -172,7 +172,7 @@ func (ec *executionContext) _EmbeddedCase1(ctx context.Context, sel ast.Selectio
 			out.Values[i] = graphql.MarshalString("EmbeddedCase1")
 		case "exportedEmbeddedPointerExportedMethod":
 
-			out.Values[i] = ec._EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx, field, obj)
+			out.Values[i] = _EmbeddedCase1_exportedEmbeddedPointerExportedMethod(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -200,7 +200,7 @@ func (ec *executionContext) _EmbeddedCase2(ctx context.Context, sel ast.Selectio
 			out.Values[i] = graphql.MarshalString("EmbeddedCase2")
 		case "unexportedEmbeddedPointerExportedMethod":
 
-			out.Values[i] = ec._EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx, field, obj)
+			out.Values[i] = _EmbeddedCase2_unexportedEmbeddedPointerExportedMethod(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -228,7 +228,7 @@ func (ec *executionContext) _EmbeddedCase3(ctx context.Context, sel ast.Selectio
 			out.Values[i] = graphql.MarshalString("EmbeddedCase3")
 		case "unexportedEmbeddedInterfaceExportedMethod":
 
-			out.Values[i] = ec._EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx, field, obj)
+			out.Values[i] = _EmbeddedCase3_unexportedEmbeddedInterfaceExportedMethod(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++

@@ -64,8 +64,8 @@ func (ec *executionContext) field_WrappedSlice_get_args(ctx context.Context, raw
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _WrappedMap_get(ctx context.Context, field graphql.CollectedField, obj WrappedMap) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_WrappedMap_get(ctx, field)
+func _WrappedMap_get(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj WrappedMap) (ret graphql.Marshaler) {
+	fc, err := fieldContext_WrappedMap_get(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -92,7 +92,7 @@ func (ec *executionContext) _WrappedMap_get(ctx context.Context, field graphql.C
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_WrappedMap_get(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_WrappedMap_get(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "WrappedMap",
 		Field:      field,
@@ -116,8 +116,8 @@ func (ec *executionContext) fieldContext_WrappedMap_get(ctx context.Context, fie
 	return fc, nil
 }
 
-func (ec *executionContext) _WrappedSlice_get(ctx context.Context, field graphql.CollectedField, obj WrappedSlice) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_WrappedSlice_get(ctx, field)
+func _WrappedSlice_get(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj WrappedSlice) (ret graphql.Marshaler) {
+	fc, err := fieldContext_WrappedSlice_get(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -144,7 +144,7 @@ func (ec *executionContext) _WrappedSlice_get(ctx context.Context, field graphql
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_WrappedSlice_get(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_WrappedSlice_get(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "WrappedSlice",
 		Field:      field,
@@ -168,8 +168,8 @@ func (ec *executionContext) fieldContext_WrappedSlice_get(ctx context.Context, f
 	return fc, nil
 }
 
-func (ec *executionContext) _WrappedStruct_name(ctx context.Context, field graphql.CollectedField, obj *WrappedStruct) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_WrappedStruct_name(ctx, field)
+func _WrappedStruct_name(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *WrappedStruct) (ret graphql.Marshaler) {
+	fc, err := fieldContext_WrappedStruct_name(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -196,7 +196,7 @@ func (ec *executionContext) _WrappedStruct_name(ctx context.Context, field graph
 	return ec.marshalNWrappedScalar2githubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚋotherpkgᚐScalar(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_WrappedStruct_name(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_WrappedStruct_name(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "WrappedStruct",
 		Field:      field,
@@ -209,8 +209,8 @@ func (ec *executionContext) fieldContext_WrappedStruct_name(ctx context.Context,
 	return fc, nil
 }
 
-func (ec *executionContext) _WrappedStruct_desc(ctx context.Context, field graphql.CollectedField, obj *WrappedStruct) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_WrappedStruct_desc(ctx, field)
+func _WrappedStruct_desc(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *WrappedStruct) (ret graphql.Marshaler) {
+	fc, err := fieldContext_WrappedStruct_desc(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -234,7 +234,7 @@ func (ec *executionContext) _WrappedStruct_desc(ctx context.Context, field graph
 	return ec.marshalOWrappedScalar2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚋotherpkgᚐScalar(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_WrappedStruct_desc(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_WrappedStruct_desc(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "WrappedStruct",
 		Field:      field,
@@ -278,7 +278,7 @@ func (ec *executionContext) _WrappedMap(ctx context.Context, sel ast.SelectionSe
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._WrappedMap_get(ctx, field, obj)
+				res = _WrappedMap_get(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -319,7 +319,7 @@ func (ec *executionContext) _WrappedSlice(ctx context.Context, sel ast.Selection
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._WrappedSlice_get(ctx, field, obj)
+				res = _WrappedSlice_get(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -353,14 +353,14 @@ func (ec *executionContext) _WrappedStruct(ctx context.Context, sel ast.Selectio
 			out.Values[i] = graphql.MarshalString("WrappedStruct")
 		case "name":
 
-			out.Values[i] = ec._WrappedStruct_name(ctx, field, obj)
+			out.Values[i] = _WrappedStruct_name(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "desc":
 
-			out.Values[i] = ec._WrappedStruct_desc(ctx, field, obj)
+			out.Values[i] = _WrappedStruct_desc(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

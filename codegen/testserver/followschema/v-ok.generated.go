@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _VOkCaseNil_value(ctx context.Context, field graphql.CollectedField, obj *VOkCaseNil) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_VOkCaseNil_value(ctx, field)
+func _VOkCaseNil_value(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *VOkCaseNil) (ret graphql.Marshaler) {
+	fc, err := fieldContext_VOkCaseNil_value(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -54,7 +54,7 @@ func (ec *executionContext) _VOkCaseNil_value(ctx context.Context, field graphql
 	return ec.marshalOString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_VOkCaseNil_value(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_VOkCaseNil_value(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "VOkCaseNil",
 		Field:      field,
@@ -67,8 +67,8 @@ func (ec *executionContext) fieldContext_VOkCaseNil_value(ctx context.Context, f
 	return fc, nil
 }
 
-func (ec *executionContext) _VOkCaseValue_value(ctx context.Context, field graphql.CollectedField, obj *VOkCaseValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_VOkCaseValue_value(ctx, field)
+func _VOkCaseValue_value(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *VOkCaseValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext_VOkCaseValue_value(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -96,7 +96,7 @@ func (ec *executionContext) _VOkCaseValue_value(ctx context.Context, field graph
 	return ec.marshalOString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_VOkCaseValue_value(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_VOkCaseValue_value(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "VOkCaseValue",
 		Field:      field,
@@ -133,7 +133,7 @@ func (ec *executionContext) _VOkCaseNil(ctx context.Context, sel ast.SelectionSe
 			out.Values[i] = graphql.MarshalString("VOkCaseNil")
 		case "value":
 
-			out.Values[i] = ec._VOkCaseNil_value(ctx, field, obj)
+			out.Values[i] = _VOkCaseNil_value(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
@@ -158,7 +158,7 @@ func (ec *executionContext) _VOkCaseValue(ctx context.Context, sel ast.Selection
 			out.Values[i] = graphql.MarshalString("VOkCaseValue")
 		case "value":
 
-			out.Values[i] = ec._VOkCaseValue_value(ctx, field, obj)
+			out.Values[i] = _VOkCaseValue_value(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

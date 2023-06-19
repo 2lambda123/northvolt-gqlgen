@@ -26,8 +26,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _MapStringInterfaceType_a(ctx context.Context, field graphql.CollectedField, obj map[string]interface{}) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_MapStringInterfaceType_a(ctx, field)
+func _MapStringInterfaceType_a(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj map[string]interface{}) (ret graphql.Marshaler) {
+	fc, err := fieldContext_MapStringInterfaceType_a(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -60,7 +60,7 @@ func (ec *executionContext) _MapStringInterfaceType_a(ctx context.Context, field
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_MapStringInterfaceType_a(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_MapStringInterfaceType_a(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "MapStringInterfaceType",
 		Field:      field,
@@ -73,8 +73,8 @@ func (ec *executionContext) fieldContext_MapStringInterfaceType_a(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _MapStringInterfaceType_b(ctx context.Context, field graphql.CollectedField, obj map[string]interface{}) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_MapStringInterfaceType_b(ctx, field)
+func _MapStringInterfaceType_b(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj map[string]interface{}) (ret graphql.Marshaler) {
+	fc, err := fieldContext_MapStringInterfaceType_b(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -107,7 +107,7 @@ func (ec *executionContext) _MapStringInterfaceType_b(ctx context.Context, field
 	return ec.marshalOInt2ᚖint(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_MapStringInterfaceType_b(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_MapStringInterfaceType_b(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "MapStringInterfaceType",
 		Field:      field,
@@ -167,11 +167,11 @@ func (ec *executionContext) _MapStringInterfaceType(ctx context.Context, sel ast
 			out.Values[i] = graphql.MarshalString("MapStringInterfaceType")
 		case "a":
 
-			out.Values[i] = ec._MapStringInterfaceType_a(ctx, field, obj)
+			out.Values[i] = _MapStringInterfaceType_a(ctx, ec, field, obj)
 
 		case "b":
 
-			out.Values[i] = ec._MapStringInterfaceType_b(ctx, field, obj)
+			out.Values[i] = _MapStringInterfaceType_b(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

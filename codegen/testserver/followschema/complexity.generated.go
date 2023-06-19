@@ -30,8 +30,8 @@ type OverlappingFieldsResolver interface {
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _OverlappingFields_oneFoo(ctx context.Context, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_OverlappingFields_oneFoo(ctx, field)
+func _OverlappingFields_oneFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
+	fc, err := fieldContext_OverlappingFields_oneFoo(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -58,7 +58,7 @@ func (ec *executionContext) _OverlappingFields_oneFoo(ctx context.Context, field
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_OverlappingFields_oneFoo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_OverlappingFields_oneFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "OverlappingFields",
 		Field:      field,
@@ -71,8 +71,8 @@ func (ec *executionContext) fieldContext_OverlappingFields_oneFoo(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _OverlappingFields_twoFoo(ctx context.Context, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_OverlappingFields_twoFoo(ctx, field)
+func _OverlappingFields_twoFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
+	fc, err := fieldContext_OverlappingFields_twoFoo(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -99,7 +99,7 @@ func (ec *executionContext) _OverlappingFields_twoFoo(ctx context.Context, field
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_OverlappingFields_twoFoo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_OverlappingFields_twoFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "OverlappingFields",
 		Field:      field,
@@ -112,8 +112,8 @@ func (ec *executionContext) fieldContext_OverlappingFields_twoFoo(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _OverlappingFields_oldFoo(ctx context.Context, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_OverlappingFields_oldFoo(ctx, field)
+func _OverlappingFields_oldFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
+	fc, err := fieldContext_OverlappingFields_oldFoo(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -140,7 +140,7 @@ func (ec *executionContext) _OverlappingFields_oldFoo(ctx context.Context, field
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_OverlappingFields_oldFoo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_OverlappingFields_oldFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "OverlappingFields",
 		Field:      field,
@@ -153,8 +153,8 @@ func (ec *executionContext) fieldContext_OverlappingFields_oldFoo(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _OverlappingFields_newFoo(ctx context.Context, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_OverlappingFields_newFoo(ctx, field)
+func _OverlappingFields_newFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
+	fc, err := fieldContext_OverlappingFields_newFoo(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -181,7 +181,7 @@ func (ec *executionContext) _OverlappingFields_newFoo(ctx context.Context, field
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_OverlappingFields_newFoo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_OverlappingFields_newFoo(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "OverlappingFields",
 		Field:      field,
@@ -194,8 +194,8 @@ func (ec *executionContext) fieldContext_OverlappingFields_newFoo(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _OverlappingFields_new_foo(ctx context.Context, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_OverlappingFields_new_foo(ctx, field)
+func _OverlappingFields_new_foo(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *OverlappingFields) (ret graphql.Marshaler) {
+	fc, err := fieldContext_OverlappingFields_new_foo(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -222,7 +222,7 @@ func (ec *executionContext) _OverlappingFields_new_foo(ctx context.Context, fiel
 	return ec.marshalNInt2int(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_OverlappingFields_new_foo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_OverlappingFields_new_foo(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "OverlappingFields",
 		Field:      field,
@@ -259,14 +259,14 @@ func (ec *executionContext) _OverlappingFields(ctx context.Context, sel ast.Sele
 			out.Values[i] = graphql.MarshalString("OverlappingFields")
 		case "oneFoo":
 
-			out.Values[i] = ec._OverlappingFields_oneFoo(ctx, field, obj)
+			out.Values[i] = _OverlappingFields_oneFoo(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				atomic.AddUint32(&invalids, 1)
 			}
 		case "twoFoo":
 
-			out.Values[i] = ec._OverlappingFields_twoFoo(ctx, field, obj)
+			out.Values[i] = _OverlappingFields_twoFoo(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				atomic.AddUint32(&invalids, 1)
@@ -280,7 +280,7 @@ func (ec *executionContext) _OverlappingFields(ctx context.Context, sel ast.Sele
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._OverlappingFields_oldFoo(ctx, field, obj)
+				res = _OverlappingFields_oldFoo(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -293,14 +293,14 @@ func (ec *executionContext) _OverlappingFields(ctx context.Context, sel ast.Sele
 			})
 		case "newFoo":
 
-			out.Values[i] = ec._OverlappingFields_newFoo(ctx, field, obj)
+			out.Values[i] = _OverlappingFields_newFoo(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				atomic.AddUint32(&invalids, 1)
 			}
 		case "new_foo":
 
-			out.Values[i] = ec._OverlappingFields_new_foo(ctx, field, obj)
+			out.Values[i] = _OverlappingFields_new_foo(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				atomic.AddUint32(&invalids, 1)

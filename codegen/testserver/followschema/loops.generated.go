@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _LoopA_b(ctx context.Context, field graphql.CollectedField, obj *LoopA) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_LoopA_b(ctx, field)
+func _LoopA_b(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *LoopA) (ret graphql.Marshaler) {
+	fc, err := fieldContext_LoopA_b(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -53,7 +53,7 @@ func (ec *executionContext) _LoopA_b(ctx context.Context, field graphql.Collecte
 	return ec.marshalNLoopB2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐLoopB(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_LoopA_b(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_LoopA_b(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "LoopA",
 		Field:      field,
@@ -62,7 +62,7 @@ func (ec *executionContext) fieldContext_LoopA_b(ctx context.Context, field grap
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "a":
-				return ec.fieldContext_LoopB_a(ctx, field)
+				return fieldContext_LoopB_a(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type LoopB", field.Name)
 		},
@@ -70,8 +70,8 @@ func (ec *executionContext) fieldContext_LoopA_b(ctx context.Context, field grap
 	return fc, nil
 }
 
-func (ec *executionContext) _LoopB_a(ctx context.Context, field graphql.CollectedField, obj *LoopB) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_LoopB_a(ctx, field)
+func _LoopB_a(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *LoopB) (ret graphql.Marshaler) {
+	fc, err := fieldContext_LoopB_a(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -98,7 +98,7 @@ func (ec *executionContext) _LoopB_a(ctx context.Context, field graphql.Collecte
 	return ec.marshalNLoopA2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐLoopA(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_LoopB_a(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_LoopB_a(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "LoopB",
 		Field:      field,
@@ -107,7 +107,7 @@ func (ec *executionContext) fieldContext_LoopB_a(ctx context.Context, field grap
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "b":
-				return ec.fieldContext_LoopA_b(ctx, field)
+				return fieldContext_LoopA_b(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type LoopA", field.Name)
 		},
@@ -139,7 +139,7 @@ func (ec *executionContext) _LoopA(ctx context.Context, sel ast.SelectionSet, ob
 			out.Values[i] = graphql.MarshalString("LoopA")
 		case "b":
 
-			out.Values[i] = ec._LoopA_b(ctx, field, obj)
+			out.Values[i] = _LoopA_b(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -167,7 +167,7 @@ func (ec *executionContext) _LoopB(ctx context.Context, sel ast.SelectionSet, ob
 			out.Values[i] = graphql.MarshalString("LoopB")
 		case "a":
 
-			out.Values[i] = ec._LoopB_a(ctx, field, obj)
+			out.Values[i] = _LoopB_a(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++

@@ -40,8 +40,8 @@ func (ec *executionContext) field_VariadicModel_value_args(ctx context.Context, 
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _VariadicModel_value(ctx context.Context, field graphql.CollectedField, obj *VariadicModel) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_VariadicModel_value(ctx, field)
+func _VariadicModel_value(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *VariadicModel) (ret graphql.Marshaler) {
+	fc, err := fieldContext_VariadicModel_value(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -65,7 +65,7 @@ func (ec *executionContext) _VariadicModel_value(ctx context.Context, field grap
 	return ec.marshalOString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_VariadicModel_value(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_VariadicModel_value(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "VariadicModel",
 		Field:      field,
@@ -120,7 +120,7 @@ func (ec *executionContext) _VariadicModel(ctx context.Context, sel ast.Selectio
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._VariadicModel_value(ctx, field, obj)
+				res = _VariadicModel_value(ctx, ec, field, obj)
 				return res
 			}
 

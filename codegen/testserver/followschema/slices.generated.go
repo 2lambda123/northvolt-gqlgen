@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _Slices_test1(ctx context.Context, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Slices_test1(ctx, field)
+func _Slices_test1(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Slices_test1(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -50,7 +50,7 @@ func (ec *executionContext) _Slices_test1(ctx context.Context, field graphql.Col
 	return ec.marshalOString2ᚕᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Slices_test1(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Slices_test1(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Slices",
 		Field:      field,
@@ -63,8 +63,8 @@ func (ec *executionContext) fieldContext_Slices_test1(ctx context.Context, field
 	return fc, nil
 }
 
-func (ec *executionContext) _Slices_test2(ctx context.Context, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Slices_test2(ctx, field)
+func _Slices_test2(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Slices_test2(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -88,7 +88,7 @@ func (ec *executionContext) _Slices_test2(ctx context.Context, field graphql.Col
 	return ec.marshalOString2ᚕstringᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Slices_test2(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Slices_test2(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Slices",
 		Field:      field,
@@ -101,8 +101,8 @@ func (ec *executionContext) fieldContext_Slices_test2(ctx context.Context, field
 	return fc, nil
 }
 
-func (ec *executionContext) _Slices_test3(ctx context.Context, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Slices_test3(ctx, field)
+func _Slices_test3(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Slices_test3(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -129,7 +129,7 @@ func (ec *executionContext) _Slices_test3(ctx context.Context, field graphql.Col
 	return ec.marshalNString2ᚕᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Slices_test3(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Slices_test3(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Slices",
 		Field:      field,
@@ -142,8 +142,8 @@ func (ec *executionContext) fieldContext_Slices_test3(ctx context.Context, field
 	return fc, nil
 }
 
-func (ec *executionContext) _Slices_test4(ctx context.Context, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Slices_test4(ctx, field)
+func _Slices_test4(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Slices) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Slices_test4(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -170,7 +170,7 @@ func (ec *executionContext) _Slices_test4(ctx context.Context, field graphql.Col
 	return ec.marshalNString2ᚕstringᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Slices_test4(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Slices_test4(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Slices",
 		Field:      field,
@@ -207,22 +207,22 @@ func (ec *executionContext) _Slices(ctx context.Context, sel ast.SelectionSet, o
 			out.Values[i] = graphql.MarshalString("Slices")
 		case "test1":
 
-			out.Values[i] = ec._Slices_test1(ctx, field, obj)
+			out.Values[i] = _Slices_test1(ctx, ec, field, obj)
 
 		case "test2":
 
-			out.Values[i] = ec._Slices_test2(ctx, field, obj)
+			out.Values[i] = _Slices_test2(ctx, ec, field, obj)
 
 		case "test3":
 
-			out.Values[i] = ec._Slices_test3(ctx, field, obj)
+			out.Values[i] = _Slices_test3(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "test4":
 
-			out.Values[i] = ec._Slices_test4(ctx, field, obj)
+			out.Values[i] = _Slices_test4(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++

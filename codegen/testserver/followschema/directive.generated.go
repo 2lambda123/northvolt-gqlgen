@@ -156,8 +156,8 @@ func (ec *executionContext) _fieldMiddleware(ctx context.Context, obj interface{
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _ObjectDirectives_text(ctx context.Context, field graphql.CollectedField, obj *ObjectDirectives) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ObjectDirectives_text(ctx, field)
+func _ObjectDirectives_text(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ObjectDirectives) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ObjectDirectives_text(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -216,7 +216,7 @@ func (ec *executionContext) _ObjectDirectives_text(ctx context.Context, field gr
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ObjectDirectives_text(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ObjectDirectives_text(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ObjectDirectives",
 		Field:      field,
@@ -229,8 +229,8 @@ func (ec *executionContext) fieldContext_ObjectDirectives_text(ctx context.Conte
 	return fc, nil
 }
 
-func (ec *executionContext) _ObjectDirectives_nullableText(ctx context.Context, field graphql.CollectedField, obj *ObjectDirectives) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ObjectDirectives_nullableText(ctx, field)
+func _ObjectDirectives_nullableText(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ObjectDirectives) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ObjectDirectives_nullableText(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -274,7 +274,7 @@ func (ec *executionContext) _ObjectDirectives_nullableText(ctx context.Context, 
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ObjectDirectives_nullableText(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ObjectDirectives_nullableText(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ObjectDirectives",
 		Field:      field,
@@ -287,8 +287,8 @@ func (ec *executionContext) fieldContext_ObjectDirectives_nullableText(ctx conte
 	return fc, nil
 }
 
-func (ec *executionContext) _ObjectDirectives_order(ctx context.Context, field graphql.CollectedField, obj *ObjectDirectives) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ObjectDirectives_order(ctx, field)
+func _ObjectDirectives_order(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ObjectDirectives) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ObjectDirectives_order(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -315,7 +315,7 @@ func (ec *executionContext) _ObjectDirectives_order(ctx context.Context, field g
 	return ec.marshalNString2ᚕstringᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ObjectDirectives_order(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ObjectDirectives_order(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ObjectDirectives",
 		Field:      field,
@@ -328,8 +328,8 @@ func (ec *executionContext) fieldContext_ObjectDirectives_order(ctx context.Cont
 	return fc, nil
 }
 
-func (ec *executionContext) _ObjectDirectivesWithCustomGoModel_nullableText(ctx context.Context, field graphql.CollectedField, obj *ObjectDirectivesWithCustomGoModel) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_ObjectDirectivesWithCustomGoModel_nullableText(ctx, field)
+func _ObjectDirectivesWithCustomGoModel_nullableText(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *ObjectDirectivesWithCustomGoModel) (ret graphql.Marshaler) {
+	fc, err := fieldContext_ObjectDirectivesWithCustomGoModel_nullableText(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -373,7 +373,7 @@ func (ec *executionContext) _ObjectDirectivesWithCustomGoModel_nullableText(ctx 
 	return ec.marshalOString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_ObjectDirectivesWithCustomGoModel_nullableText(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_ObjectDirectivesWithCustomGoModel_nullableText(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "ObjectDirectivesWithCustomGoModel",
 		Field:      field,
@@ -632,18 +632,18 @@ func (ec *executionContext) _ObjectDirectives(ctx context.Context, sel ast.Selec
 			out.Values[i] = graphql.MarshalString("ObjectDirectives")
 		case "text":
 
-			out.Values[i] = ec._ObjectDirectives_text(ctx, field, obj)
+			out.Values[i] = _ObjectDirectives_text(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "nullableText":
 
-			out.Values[i] = ec._ObjectDirectives_nullableText(ctx, field, obj)
+			out.Values[i] = _ObjectDirectives_nullableText(ctx, ec, field, obj)
 
 		case "order":
 
-			out.Values[i] = ec._ObjectDirectives_order(ctx, field, obj)
+			out.Values[i] = _ObjectDirectives_order(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -671,7 +671,7 @@ func (ec *executionContext) _ObjectDirectivesWithCustomGoModel(ctx context.Conte
 			out.Values[i] = graphql.MarshalString("ObjectDirectivesWithCustomGoModel")
 		case "nullableText":
 
-			out.Values[i] = ec._ObjectDirectivesWithCustomGoModel_nullableText(ctx, field, obj)
+			out.Values[i] = _ObjectDirectivesWithCustomGoModel_nullableText(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

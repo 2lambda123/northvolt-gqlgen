@@ -77,8 +77,8 @@ func (ec *executionContext) field_Mutation_updateSomething_args(ctx context.Cont
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _DefaultParametersMirror_falsyBoolean(ctx context.Context, field graphql.CollectedField, obj *DefaultParametersMirror) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_DefaultParametersMirror_falsyBoolean(ctx, field)
+func _DefaultParametersMirror_falsyBoolean(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *DefaultParametersMirror) (ret graphql.Marshaler) {
+	fc, err := fieldContext_DefaultParametersMirror_falsyBoolean(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -102,7 +102,7 @@ func (ec *executionContext) _DefaultParametersMirror_falsyBoolean(ctx context.Co
 	return ec.marshalOBoolean2ᚖbool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_DefaultParametersMirror_falsyBoolean(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_DefaultParametersMirror_falsyBoolean(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "DefaultParametersMirror",
 		Field:      field,
@@ -115,8 +115,8 @@ func (ec *executionContext) fieldContext_DefaultParametersMirror_falsyBoolean(ct
 	return fc, nil
 }
 
-func (ec *executionContext) _DefaultParametersMirror_truthyBoolean(ctx context.Context, field graphql.CollectedField, obj *DefaultParametersMirror) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_DefaultParametersMirror_truthyBoolean(ctx, field)
+func _DefaultParametersMirror_truthyBoolean(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *DefaultParametersMirror) (ret graphql.Marshaler) {
+	fc, err := fieldContext_DefaultParametersMirror_truthyBoolean(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -140,7 +140,7 @@ func (ec *executionContext) _DefaultParametersMirror_truthyBoolean(ctx context.C
 	return ec.marshalOBoolean2ᚖbool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_DefaultParametersMirror_truthyBoolean(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_DefaultParametersMirror_truthyBoolean(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "DefaultParametersMirror",
 		Field:      field,
@@ -153,8 +153,8 @@ func (ec *executionContext) fieldContext_DefaultParametersMirror_truthyBoolean(c
 	return fc, nil
 }
 
-func (ec *executionContext) _Mutation_defaultInput(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Mutation_defaultInput(ctx, field)
+func _Mutation_defaultInput(ctx context.Context, ec *executionContext, field graphql.CollectedField) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Mutation_defaultInput(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -181,7 +181,7 @@ func (ec *executionContext) _Mutation_defaultInput(ctx context.Context, field gr
 	return ec.marshalNDefaultParametersMirror2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐDefaultParametersMirror(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Mutation_defaultInput(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Mutation_defaultInput(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Mutation",
 		Field:      field,
@@ -190,9 +190,9 @@ func (ec *executionContext) fieldContext_Mutation_defaultInput(ctx context.Conte
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "falsyBoolean":
-				return ec.fieldContext_DefaultParametersMirror_falsyBoolean(ctx, field)
+				return fieldContext_DefaultParametersMirror_falsyBoolean(ctx, ec, field)
 			case "truthyBoolean":
-				return ec.fieldContext_DefaultParametersMirror_truthyBoolean(ctx, field)
+				return fieldContext_DefaultParametersMirror_truthyBoolean(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type DefaultParametersMirror", field.Name)
 		},
@@ -211,8 +211,8 @@ func (ec *executionContext) fieldContext_Mutation_defaultInput(ctx context.Conte
 	return fc, nil
 }
 
-func (ec *executionContext) _Mutation_updateSomething(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Mutation_updateSomething(ctx, field)
+func _Mutation_updateSomething(ctx context.Context, ec *executionContext, field graphql.CollectedField) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Mutation_updateSomething(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -239,7 +239,7 @@ func (ec *executionContext) _Mutation_updateSomething(ctx context.Context, field
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Mutation_updateSomething(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Mutation_updateSomething(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Mutation",
 		Field:      field,
@@ -263,8 +263,8 @@ func (ec *executionContext) fieldContext_Mutation_updateSomething(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) _Mutation_updatePtrToPtr(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Mutation_updatePtrToPtr(ctx, field)
+func _Mutation_updatePtrToPtr(ctx context.Context, ec *executionContext, field graphql.CollectedField) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Mutation_updatePtrToPtr(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -291,7 +291,7 @@ func (ec *executionContext) _Mutation_updatePtrToPtr(ctx context.Context, field 
 	return ec.marshalNPtrToPtrOuter2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐPtrToPtrOuter(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Mutation_updatePtrToPtr(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Mutation_updatePtrToPtr(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Mutation",
 		Field:      field,
@@ -300,11 +300,11 @@ func (ec *executionContext) fieldContext_Mutation_updatePtrToPtr(ctx context.Con
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "name":
-				return ec.fieldContext_PtrToPtrOuter_name(ctx, field)
+				return fieldContext_PtrToPtrOuter_name(ctx, ec, field)
 			case "inner":
-				return ec.fieldContext_PtrToPtrOuter_inner(ctx, field)
+				return fieldContext_PtrToPtrOuter_inner(ctx, ec, field)
 			case "stupidInner":
-				return ec.fieldContext_PtrToPtrOuter_stupidInner(ctx, field)
+				return fieldContext_PtrToPtrOuter_stupidInner(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type PtrToPtrOuter", field.Name)
 		},
@@ -385,11 +385,11 @@ func (ec *executionContext) _DefaultParametersMirror(ctx context.Context, sel as
 			out.Values[i] = graphql.MarshalString("DefaultParametersMirror")
 		case "falsyBoolean":
 
-			out.Values[i] = ec._DefaultParametersMirror_falsyBoolean(ctx, field, obj)
+			out.Values[i] = _DefaultParametersMirror_falsyBoolean(ctx, ec, field, obj)
 
 		case "truthyBoolean":
 
-			out.Values[i] = ec._DefaultParametersMirror_truthyBoolean(ctx, field, obj)
+			out.Values[i] = _DefaultParametersMirror_truthyBoolean(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
@@ -424,7 +424,7 @@ func (ec *executionContext) _Mutation(ctx context.Context, sel ast.SelectionSet)
 		case "defaultInput":
 
 			out.Values[i] = ec.OperationContext.RootResolverMiddleware(innerCtx, func(ctx context.Context) (res graphql.Marshaler) {
-				return ec._Mutation_defaultInput(ctx, field)
+				return _Mutation_defaultInput(ctx, ec, field)
 			})
 
 			if out.Values[i] == graphql.Null {
@@ -433,7 +433,7 @@ func (ec *executionContext) _Mutation(ctx context.Context, sel ast.SelectionSet)
 		case "updateSomething":
 
 			out.Values[i] = ec.OperationContext.RootResolverMiddleware(innerCtx, func(ctx context.Context) (res graphql.Marshaler) {
-				return ec._Mutation_updateSomething(ctx, field)
+				return _Mutation_updateSomething(ctx, ec, field)
 			})
 
 			if out.Values[i] == graphql.Null {
@@ -442,7 +442,7 @@ func (ec *executionContext) _Mutation(ctx context.Context, sel ast.SelectionSet)
 		case "updatePtrToPtr":
 
 			out.Values[i] = ec.OperationContext.RootResolverMiddleware(innerCtx, func(ctx context.Context) (res graphql.Marshaler) {
-				return ec._Mutation_updatePtrToPtr(ctx, field)
+				return _Mutation_updatePtrToPtr(ctx, ec, field)
 			})
 
 			if out.Values[i] == graphql.Null {

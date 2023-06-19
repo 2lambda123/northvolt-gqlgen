@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _PtrToSliceContainer_ptrToSlice(ctx context.Context, field graphql.CollectedField, obj *PtrToSliceContainer) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_PtrToSliceContainer_ptrToSlice(ctx, field)
+func _PtrToSliceContainer_ptrToSlice(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *PtrToSliceContainer) (ret graphql.Marshaler) {
+	fc, err := fieldContext_PtrToSliceContainer_ptrToSlice(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -50,7 +50,7 @@ func (ec *executionContext) _PtrToSliceContainer_ptrToSlice(ctx context.Context,
 	return ec.marshalOString2ᚖᚕstringᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_PtrToSliceContainer_ptrToSlice(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_PtrToSliceContainer_ptrToSlice(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "PtrToSliceContainer",
 		Field:      field,
@@ -87,7 +87,7 @@ func (ec *executionContext) _PtrToSliceContainer(ctx context.Context, sel ast.Se
 			out.Values[i] = graphql.MarshalString("PtrToSliceContainer")
 		case "ptrToSlice":
 
-			out.Values[i] = ec._PtrToSliceContainer_ptrToSlice(ctx, field, obj)
+			out.Values[i] = _PtrToSliceContainer_ptrToSlice(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))

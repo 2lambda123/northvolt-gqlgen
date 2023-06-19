@@ -62,8 +62,8 @@ func (ec *executionContext) field_Panics_fieldFuncMarshal_args(ctx context.Conte
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _Panics_fieldScalarMarshal(ctx context.Context, field graphql.CollectedField, obj *Panics) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Panics_fieldScalarMarshal(ctx, field)
+func _Panics_fieldScalarMarshal(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Panics) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Panics_fieldScalarMarshal(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -90,7 +90,7 @@ func (ec *executionContext) _Panics_fieldScalarMarshal(ctx context.Context, fiel
 	return ec.marshalNMarshalPanic2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐMarshalPanicᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Panics_fieldScalarMarshal(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Panics_fieldScalarMarshal(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Panics",
 		Field:      field,
@@ -103,8 +103,8 @@ func (ec *executionContext) fieldContext_Panics_fieldScalarMarshal(ctx context.C
 	return fc, nil
 }
 
-func (ec *executionContext) _Panics_fieldFuncMarshal(ctx context.Context, field graphql.CollectedField, obj *Panics) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Panics_fieldFuncMarshal(ctx, field)
+func _Panics_fieldFuncMarshal(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Panics) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Panics_fieldFuncMarshal(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -131,7 +131,7 @@ func (ec *executionContext) _Panics_fieldFuncMarshal(ctx context.Context, field 
 	return ec.marshalNMarshalPanic2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋcodegenᚋtestserverᚋfollowschemaᚐMarshalPanicᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Panics_fieldFuncMarshal(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Panics_fieldFuncMarshal(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Panics",
 		Field:      field,
@@ -155,8 +155,8 @@ func (ec *executionContext) fieldContext_Panics_fieldFuncMarshal(ctx context.Con
 	return fc, nil
 }
 
-func (ec *executionContext) _Panics_argUnmarshal(ctx context.Context, field graphql.CollectedField, obj *Panics) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Panics_argUnmarshal(ctx, field)
+func _Panics_argUnmarshal(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Panics) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Panics_argUnmarshal(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -183,7 +183,7 @@ func (ec *executionContext) _Panics_argUnmarshal(ctx context.Context, field grap
 	return ec.marshalNBoolean2bool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Panics_argUnmarshal(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Panics_argUnmarshal(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Panics",
 		Field:      field,
@@ -238,7 +238,7 @@ func (ec *executionContext) _Panics(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Panics_fieldScalarMarshal(ctx, field, obj)
+				res = _Panics_fieldScalarMarshal(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -258,7 +258,7 @@ func (ec *executionContext) _Panics(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Panics_fieldFuncMarshal(ctx, field, obj)
+				res = _Panics_fieldFuncMarshal(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}
@@ -278,7 +278,7 @@ func (ec *executionContext) _Panics(ctx context.Context, sel ast.SelectionSet, o
 						ec.Error(ctx, ec.Recover(ctx, r))
 					}
 				}()
-				res = ec._Panics_argUnmarshal(ctx, field, obj)
+				res = _Panics_argUnmarshal(ctx, ec, field, obj)
 				if res == graphql.Null {
 					atomic.AddUint32(&invalids, 1)
 				}

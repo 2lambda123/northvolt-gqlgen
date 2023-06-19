@@ -26,8 +26,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _A_id(ctx context.Context, field graphql.CollectedField, obj *A) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_A_id(ctx, field)
+func _A_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *A) (ret graphql.Marshaler) {
+	fc, err := fieldContext_A_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -54,7 +54,7 @@ func (ec *executionContext) _A_id(ctx context.Context, field graphql.CollectedFi
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_A_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_A_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "A",
 		Field:      field,
@@ -67,8 +67,8 @@ func (ec *executionContext) fieldContext_A_id(ctx context.Context, field graphql
 	return fc, nil
 }
 
-func (ec *executionContext) _B_id(ctx context.Context, field graphql.CollectedField, obj *B) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_B_id(ctx, field)
+func _B_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *B) (ret graphql.Marshaler) {
+	fc, err := fieldContext_B_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -95,7 +95,7 @@ func (ec *executionContext) _B_id(ctx context.Context, field graphql.CollectedFi
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_B_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_B_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "B",
 		Field:      field,
@@ -155,7 +155,7 @@ func (ec *executionContext) _A(ctx context.Context, sel ast.SelectionSet, obj *A
 			out.Values[i] = graphql.MarshalString("A")
 		case "id":
 
-			out.Values[i] = ec._A_id(ctx, field, obj)
+			out.Values[i] = _A_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -183,7 +183,7 @@ func (ec *executionContext) _B(ctx context.Context, sel ast.SelectionSet, obj *B
 			out.Values[i] = graphql.MarshalString("B")
 		case "id":
 
-			out.Values[i] = ec._B_id(ctx, field, obj)
+			out.Values[i] = _B_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++

@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _AIt_id(ctx context.Context, field graphql.CollectedField, obj *AIt) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_AIt_id(ctx, field)
+func _AIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *AIt) (ret graphql.Marshaler) {
+	fc, err := fieldContext_AIt_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -53,7 +53,7 @@ func (ec *executionContext) _AIt_id(ctx context.Context, field graphql.Collected
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_AIt_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_AIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "AIt",
 		Field:      field,
@@ -66,8 +66,8 @@ func (ec *executionContext) fieldContext_AIt_id(ctx context.Context, field graph
 	return fc, nil
 }
 
-func (ec *executionContext) _AbIt_id(ctx context.Context, field graphql.CollectedField, obj *AbIt) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_AbIt_id(ctx, field)
+func _AbIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *AbIt) (ret graphql.Marshaler) {
+	fc, err := fieldContext_AbIt_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -94,7 +94,7 @@ func (ec *executionContext) _AbIt_id(ctx context.Context, field graphql.Collecte
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_AbIt_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_AbIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "AbIt",
 		Field:      field,
@@ -107,8 +107,8 @@ func (ec *executionContext) fieldContext_AbIt_id(ctx context.Context, field grap
 	return fc, nil
 }
 
-func (ec *executionContext) _XXIt_id(ctx context.Context, field graphql.CollectedField, obj *XXIt) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_XXIt_id(ctx, field)
+func _XXIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *XXIt) (ret graphql.Marshaler) {
+	fc, err := fieldContext_XXIt_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -135,7 +135,7 @@ func (ec *executionContext) _XXIt_id(ctx context.Context, field graphql.Collecte
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_XXIt_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_XXIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "XXIt",
 		Field:      field,
@@ -148,8 +148,8 @@ func (ec *executionContext) fieldContext_XXIt_id(ctx context.Context, field grap
 	return fc, nil
 }
 
-func (ec *executionContext) _XxIt_id(ctx context.Context, field graphql.CollectedField, obj *XxIt) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_XxIt_id(ctx, field)
+func _XxIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *XxIt) (ret graphql.Marshaler) {
+	fc, err := fieldContext_XxIt_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -176,7 +176,7 @@ func (ec *executionContext) _XxIt_id(ctx context.Context, field graphql.Collecte
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_XxIt_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_XxIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "XxIt",
 		Field:      field,
@@ -189,8 +189,8 @@ func (ec *executionContext) fieldContext_XxIt_id(ctx context.Context, field grap
 	return fc, nil
 }
 
-func (ec *executionContext) _asdfIt_id(ctx context.Context, field graphql.CollectedField, obj *AsdfIt) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_asdfIt_id(ctx, field)
+func _asdfIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *AsdfIt) (ret graphql.Marshaler) {
+	fc, err := fieldContext_asdfIt_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -217,7 +217,7 @@ func (ec *executionContext) _asdfIt_id(ctx context.Context, field graphql.Collec
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_asdfIt_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_asdfIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "asdfIt",
 		Field:      field,
@@ -230,8 +230,8 @@ func (ec *executionContext) fieldContext_asdfIt_id(ctx context.Context, field gr
 	return fc, nil
 }
 
-func (ec *executionContext) _iIt_id(ctx context.Context, field graphql.CollectedField, obj *IIt) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_iIt_id(ctx, field)
+func _iIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *IIt) (ret graphql.Marshaler) {
+	fc, err := fieldContext_iIt_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -258,7 +258,7 @@ func (ec *executionContext) _iIt_id(ctx context.Context, field graphql.Collected
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_iIt_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_iIt_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "iIt",
 		Field:      field,
@@ -295,7 +295,7 @@ func (ec *executionContext) _AIt(ctx context.Context, sel ast.SelectionSet, obj 
 			out.Values[i] = graphql.MarshalString("AIt")
 		case "id":
 
-			out.Values[i] = ec._AIt_id(ctx, field, obj)
+			out.Values[i] = _AIt_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -323,7 +323,7 @@ func (ec *executionContext) _AbIt(ctx context.Context, sel ast.SelectionSet, obj
 			out.Values[i] = graphql.MarshalString("AbIt")
 		case "id":
 
-			out.Values[i] = ec._AbIt_id(ctx, field, obj)
+			out.Values[i] = _AbIt_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -351,7 +351,7 @@ func (ec *executionContext) _XXIt(ctx context.Context, sel ast.SelectionSet, obj
 			out.Values[i] = graphql.MarshalString("XXIt")
 		case "id":
 
-			out.Values[i] = ec._XXIt_id(ctx, field, obj)
+			out.Values[i] = _XXIt_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -379,7 +379,7 @@ func (ec *executionContext) _XxIt(ctx context.Context, sel ast.SelectionSet, obj
 			out.Values[i] = graphql.MarshalString("XxIt")
 		case "id":
 
-			out.Values[i] = ec._XxIt_id(ctx, field, obj)
+			out.Values[i] = _XxIt_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -407,7 +407,7 @@ func (ec *executionContext) _asdfIt(ctx context.Context, sel ast.SelectionSet, o
 			out.Values[i] = graphql.MarshalString("asdfIt")
 		case "id":
 
-			out.Values[i] = ec._asdfIt_id(ctx, field, obj)
+			out.Values[i] = _asdfIt_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -435,7 +435,7 @@ func (ec *executionContext) _iIt(ctx context.Context, sel ast.SelectionSet, obj 
 			out.Values[i] = graphql.MarshalString("iIt")
 		case "id":
 
-			out.Values[i] = ec._iIt_id(ctx, field, obj)
+			out.Values[i] = _iIt_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++

@@ -25,8 +25,8 @@ import (
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) _Map_id(ctx context.Context, field graphql.CollectedField, obj *Map) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext_Map_id(ctx, field)
+func _Map_id(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *Map) (ret graphql.Marshaler) {
+	fc, err := fieldContext_Map_id(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -53,7 +53,7 @@ func (ec *executionContext) _Map_id(ctx context.Context, field graphql.Collected
 	return ec.marshalNID2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext_Map_id(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext_Map_id(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "Map",
 		Field:      field,
@@ -90,7 +90,7 @@ func (ec *executionContext) _Map(ctx context.Context, sel ast.SelectionSet, obj 
 			out.Values[i] = graphql.MarshalString("Map")
 		case "id":
 
-			out.Values[i] = ec._Map_id(ctx, field, obj)
+			out.Values[i] = _Map_id(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++

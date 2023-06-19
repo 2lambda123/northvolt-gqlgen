@@ -58,8 +58,8 @@ func (ec *executionContext) field___Type_fields_args(ctx context.Context, rawArg
 
 // region    **************************** field.gotpl *****************************
 
-func (ec *executionContext) ___Directive_name(ctx context.Context, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Directive_name(ctx, field)
+func ___Directive_name(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Directive_name(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -86,7 +86,7 @@ func (ec *executionContext) ___Directive_name(ctx context.Context, field graphql
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Directive_name(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Directive_name(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Directive",
 		Field:      field,
@@ -99,8 +99,8 @@ func (ec *executionContext) fieldContext___Directive_name(ctx context.Context, f
 	return fc, nil
 }
 
-func (ec *executionContext) ___Directive_description(ctx context.Context, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Directive_description(ctx, field)
+func ___Directive_description(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Directive_description(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -124,7 +124,7 @@ func (ec *executionContext) ___Directive_description(ctx context.Context, field 
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Directive_description(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Directive_description(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Directive",
 		Field:      field,
@@ -137,8 +137,8 @@ func (ec *executionContext) fieldContext___Directive_description(ctx context.Con
 	return fc, nil
 }
 
-func (ec *executionContext) ___Directive_locations(ctx context.Context, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Directive_locations(ctx, field)
+func ___Directive_locations(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Directive_locations(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -165,7 +165,7 @@ func (ec *executionContext) ___Directive_locations(ctx context.Context, field gr
 	return ec.marshalN__DirectiveLocation2ᚕstringᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Directive_locations(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Directive_locations(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Directive",
 		Field:      field,
@@ -178,8 +178,8 @@ func (ec *executionContext) fieldContext___Directive_locations(ctx context.Conte
 	return fc, nil
 }
 
-func (ec *executionContext) ___Directive_args(ctx context.Context, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Directive_args(ctx, field)
+func ___Directive_args(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Directive_args(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -206,7 +206,7 @@ func (ec *executionContext) ___Directive_args(ctx context.Context, field graphql
 	return ec.marshalN__InputValue2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐInputValueᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Directive_args(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Directive_args(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Directive",
 		Field:      field,
@@ -215,13 +215,13 @@ func (ec *executionContext) fieldContext___Directive_args(ctx context.Context, f
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "name":
-				return ec.fieldContext___InputValue_name(ctx, field)
+				return fieldContext___InputValue_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___InputValue_description(ctx, field)
+				return fieldContext___InputValue_description(ctx, ec, field)
 			case "type":
-				return ec.fieldContext___InputValue_type(ctx, field)
+				return fieldContext___InputValue_type(ctx, ec, field)
 			case "defaultValue":
-				return ec.fieldContext___InputValue_defaultValue(ctx, field)
+				return fieldContext___InputValue_defaultValue(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __InputValue", field.Name)
 		},
@@ -229,8 +229,8 @@ func (ec *executionContext) fieldContext___Directive_args(ctx context.Context, f
 	return fc, nil
 }
 
-func (ec *executionContext) ___Directive_isRepeatable(ctx context.Context, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Directive_isRepeatable(ctx, field)
+func ___Directive_isRepeatable(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Directive) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Directive_isRepeatable(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -257,7 +257,7 @@ func (ec *executionContext) ___Directive_isRepeatable(ctx context.Context, field
 	return ec.marshalNBoolean2bool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Directive_isRepeatable(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Directive_isRepeatable(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Directive",
 		Field:      field,
@@ -270,8 +270,8 @@ func (ec *executionContext) fieldContext___Directive_isRepeatable(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) ___EnumValue_name(ctx context.Context, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___EnumValue_name(ctx, field)
+func ___EnumValue_name(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___EnumValue_name(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -298,7 +298,7 @@ func (ec *executionContext) ___EnumValue_name(ctx context.Context, field graphql
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___EnumValue_name(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___EnumValue_name(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__EnumValue",
 		Field:      field,
@@ -311,8 +311,8 @@ func (ec *executionContext) fieldContext___EnumValue_name(ctx context.Context, f
 	return fc, nil
 }
 
-func (ec *executionContext) ___EnumValue_description(ctx context.Context, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___EnumValue_description(ctx, field)
+func ___EnumValue_description(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___EnumValue_description(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -336,7 +336,7 @@ func (ec *executionContext) ___EnumValue_description(ctx context.Context, field 
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___EnumValue_description(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___EnumValue_description(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__EnumValue",
 		Field:      field,
@@ -349,8 +349,8 @@ func (ec *executionContext) fieldContext___EnumValue_description(ctx context.Con
 	return fc, nil
 }
 
-func (ec *executionContext) ___EnumValue_isDeprecated(ctx context.Context, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___EnumValue_isDeprecated(ctx, field)
+func ___EnumValue_isDeprecated(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___EnumValue_isDeprecated(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -377,7 +377,7 @@ func (ec *executionContext) ___EnumValue_isDeprecated(ctx context.Context, field
 	return ec.marshalNBoolean2bool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___EnumValue_isDeprecated(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___EnumValue_isDeprecated(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__EnumValue",
 		Field:      field,
@@ -390,8 +390,8 @@ func (ec *executionContext) fieldContext___EnumValue_isDeprecated(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) ___EnumValue_deprecationReason(ctx context.Context, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___EnumValue_deprecationReason(ctx, field)
+func ___EnumValue_deprecationReason(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.EnumValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___EnumValue_deprecationReason(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -415,7 +415,7 @@ func (ec *executionContext) ___EnumValue_deprecationReason(ctx context.Context, 
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___EnumValue_deprecationReason(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___EnumValue_deprecationReason(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__EnumValue",
 		Field:      field,
@@ -428,8 +428,8 @@ func (ec *executionContext) fieldContext___EnumValue_deprecationReason(ctx conte
 	return fc, nil
 }
 
-func (ec *executionContext) ___Field_name(ctx context.Context, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Field_name(ctx, field)
+func ___Field_name(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Field_name(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -456,7 +456,7 @@ func (ec *executionContext) ___Field_name(ctx context.Context, field graphql.Col
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Field_name(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Field_name(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Field",
 		Field:      field,
@@ -469,8 +469,8 @@ func (ec *executionContext) fieldContext___Field_name(ctx context.Context, field
 	return fc, nil
 }
 
-func (ec *executionContext) ___Field_description(ctx context.Context, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Field_description(ctx, field)
+func ___Field_description(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Field_description(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -494,7 +494,7 @@ func (ec *executionContext) ___Field_description(ctx context.Context, field grap
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Field_description(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Field_description(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Field",
 		Field:      field,
@@ -507,8 +507,8 @@ func (ec *executionContext) fieldContext___Field_description(ctx context.Context
 	return fc, nil
 }
 
-func (ec *executionContext) ___Field_args(ctx context.Context, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Field_args(ctx, field)
+func ___Field_args(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Field_args(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -535,7 +535,7 @@ func (ec *executionContext) ___Field_args(ctx context.Context, field graphql.Col
 	return ec.marshalN__InputValue2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐInputValueᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Field_args(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Field_args(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Field",
 		Field:      field,
@@ -544,13 +544,13 @@ func (ec *executionContext) fieldContext___Field_args(ctx context.Context, field
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "name":
-				return ec.fieldContext___InputValue_name(ctx, field)
+				return fieldContext___InputValue_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___InputValue_description(ctx, field)
+				return fieldContext___InputValue_description(ctx, ec, field)
 			case "type":
-				return ec.fieldContext___InputValue_type(ctx, field)
+				return fieldContext___InputValue_type(ctx, ec, field)
 			case "defaultValue":
-				return ec.fieldContext___InputValue_defaultValue(ctx, field)
+				return fieldContext___InputValue_defaultValue(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __InputValue", field.Name)
 		},
@@ -558,8 +558,8 @@ func (ec *executionContext) fieldContext___Field_args(ctx context.Context, field
 	return fc, nil
 }
 
-func (ec *executionContext) ___Field_type(ctx context.Context, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Field_type(ctx, field)
+func ___Field_type(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Field_type(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -586,7 +586,7 @@ func (ec *executionContext) ___Field_type(ctx context.Context, field graphql.Col
 	return ec.marshalN__Type2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐType(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Field_type(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Field_type(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Field",
 		Field:      field,
@@ -595,25 +595,25 @@ func (ec *executionContext) fieldContext___Field_type(ctx context.Context, field
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -621,8 +621,8 @@ func (ec *executionContext) fieldContext___Field_type(ctx context.Context, field
 	return fc, nil
 }
 
-func (ec *executionContext) ___Field_isDeprecated(ctx context.Context, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Field_isDeprecated(ctx, field)
+func ___Field_isDeprecated(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Field_isDeprecated(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -649,7 +649,7 @@ func (ec *executionContext) ___Field_isDeprecated(ctx context.Context, field gra
 	return ec.marshalNBoolean2bool(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Field_isDeprecated(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Field_isDeprecated(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Field",
 		Field:      field,
@@ -662,8 +662,8 @@ func (ec *executionContext) fieldContext___Field_isDeprecated(ctx context.Contex
 	return fc, nil
 }
 
-func (ec *executionContext) ___Field_deprecationReason(ctx context.Context, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Field_deprecationReason(ctx, field)
+func ___Field_deprecationReason(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Field) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Field_deprecationReason(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -687,7 +687,7 @@ func (ec *executionContext) ___Field_deprecationReason(ctx context.Context, fiel
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Field_deprecationReason(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Field_deprecationReason(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Field",
 		Field:      field,
@@ -700,8 +700,8 @@ func (ec *executionContext) fieldContext___Field_deprecationReason(ctx context.C
 	return fc, nil
 }
 
-func (ec *executionContext) ___InputValue_name(ctx context.Context, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___InputValue_name(ctx, field)
+func ___InputValue_name(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___InputValue_name(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -728,7 +728,7 @@ func (ec *executionContext) ___InputValue_name(ctx context.Context, field graphq
 	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___InputValue_name(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___InputValue_name(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__InputValue",
 		Field:      field,
@@ -741,8 +741,8 @@ func (ec *executionContext) fieldContext___InputValue_name(ctx context.Context, 
 	return fc, nil
 }
 
-func (ec *executionContext) ___InputValue_description(ctx context.Context, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___InputValue_description(ctx, field)
+func ___InputValue_description(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___InputValue_description(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -766,7 +766,7 @@ func (ec *executionContext) ___InputValue_description(ctx context.Context, field
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___InputValue_description(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___InputValue_description(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__InputValue",
 		Field:      field,
@@ -779,8 +779,8 @@ func (ec *executionContext) fieldContext___InputValue_description(ctx context.Co
 	return fc, nil
 }
 
-func (ec *executionContext) ___InputValue_type(ctx context.Context, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___InputValue_type(ctx, field)
+func ___InputValue_type(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___InputValue_type(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -807,7 +807,7 @@ func (ec *executionContext) ___InputValue_type(ctx context.Context, field graphq
 	return ec.marshalN__Type2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐType(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___InputValue_type(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___InputValue_type(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__InputValue",
 		Field:      field,
@@ -816,25 +816,25 @@ func (ec *executionContext) fieldContext___InputValue_type(ctx context.Context, 
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -842,8 +842,8 @@ func (ec *executionContext) fieldContext___InputValue_type(ctx context.Context, 
 	return fc, nil
 }
 
-func (ec *executionContext) ___InputValue_defaultValue(ctx context.Context, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___InputValue_defaultValue(ctx, field)
+func ___InputValue_defaultValue(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.InputValue) (ret graphql.Marshaler) {
+	fc, err := fieldContext___InputValue_defaultValue(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -867,7 +867,7 @@ func (ec *executionContext) ___InputValue_defaultValue(ctx context.Context, fiel
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___InputValue_defaultValue(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___InputValue_defaultValue(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__InputValue",
 		Field:      field,
@@ -880,8 +880,8 @@ func (ec *executionContext) fieldContext___InputValue_defaultValue(ctx context.C
 	return fc, nil
 }
 
-func (ec *executionContext) ___Schema_description(ctx context.Context, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Schema_description(ctx, field)
+func ___Schema_description(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Schema_description(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -905,7 +905,7 @@ func (ec *executionContext) ___Schema_description(ctx context.Context, field gra
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Schema_description(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Schema_description(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Schema",
 		Field:      field,
@@ -918,8 +918,8 @@ func (ec *executionContext) fieldContext___Schema_description(ctx context.Contex
 	return fc, nil
 }
 
-func (ec *executionContext) ___Schema_types(ctx context.Context, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Schema_types(ctx, field)
+func ___Schema_types(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Schema_types(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -946,7 +946,7 @@ func (ec *executionContext) ___Schema_types(ctx context.Context, field graphql.C
 	return ec.marshalN__Type2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐTypeᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Schema_types(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Schema_types(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Schema",
 		Field:      field,
@@ -955,25 +955,25 @@ func (ec *executionContext) fieldContext___Schema_types(ctx context.Context, fie
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -981,8 +981,8 @@ func (ec *executionContext) fieldContext___Schema_types(ctx context.Context, fie
 	return fc, nil
 }
 
-func (ec *executionContext) ___Schema_queryType(ctx context.Context, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Schema_queryType(ctx, field)
+func ___Schema_queryType(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Schema_queryType(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1009,7 +1009,7 @@ func (ec *executionContext) ___Schema_queryType(ctx context.Context, field graph
 	return ec.marshalN__Type2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐType(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Schema_queryType(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Schema_queryType(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Schema",
 		Field:      field,
@@ -1018,25 +1018,25 @@ func (ec *executionContext) fieldContext___Schema_queryType(ctx context.Context,
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -1044,8 +1044,8 @@ func (ec *executionContext) fieldContext___Schema_queryType(ctx context.Context,
 	return fc, nil
 }
 
-func (ec *executionContext) ___Schema_mutationType(ctx context.Context, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Schema_mutationType(ctx, field)
+func ___Schema_mutationType(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Schema_mutationType(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1069,7 +1069,7 @@ func (ec *executionContext) ___Schema_mutationType(ctx context.Context, field gr
 	return ec.marshalO__Type2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐType(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Schema_mutationType(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Schema_mutationType(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Schema",
 		Field:      field,
@@ -1078,25 +1078,25 @@ func (ec *executionContext) fieldContext___Schema_mutationType(ctx context.Conte
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -1104,8 +1104,8 @@ func (ec *executionContext) fieldContext___Schema_mutationType(ctx context.Conte
 	return fc, nil
 }
 
-func (ec *executionContext) ___Schema_subscriptionType(ctx context.Context, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Schema_subscriptionType(ctx, field)
+func ___Schema_subscriptionType(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Schema_subscriptionType(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1129,7 +1129,7 @@ func (ec *executionContext) ___Schema_subscriptionType(ctx context.Context, fiel
 	return ec.marshalO__Type2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐType(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Schema_subscriptionType(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Schema_subscriptionType(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Schema",
 		Field:      field,
@@ -1138,25 +1138,25 @@ func (ec *executionContext) fieldContext___Schema_subscriptionType(ctx context.C
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -1164,8 +1164,8 @@ func (ec *executionContext) fieldContext___Schema_subscriptionType(ctx context.C
 	return fc, nil
 }
 
-func (ec *executionContext) ___Schema_directives(ctx context.Context, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Schema_directives(ctx, field)
+func ___Schema_directives(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Schema) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Schema_directives(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1192,7 +1192,7 @@ func (ec *executionContext) ___Schema_directives(ctx context.Context, field grap
 	return ec.marshalN__Directive2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐDirectiveᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Schema_directives(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Schema_directives(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Schema",
 		Field:      field,
@@ -1201,15 +1201,15 @@ func (ec *executionContext) fieldContext___Schema_directives(ctx context.Context
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "name":
-				return ec.fieldContext___Directive_name(ctx, field)
+				return fieldContext___Directive_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Directive_description(ctx, field)
+				return fieldContext___Directive_description(ctx, ec, field)
 			case "locations":
-				return ec.fieldContext___Directive_locations(ctx, field)
+				return fieldContext___Directive_locations(ctx, ec, field)
 			case "args":
-				return ec.fieldContext___Directive_args(ctx, field)
+				return fieldContext___Directive_args(ctx, ec, field)
 			case "isRepeatable":
-				return ec.fieldContext___Directive_isRepeatable(ctx, field)
+				return fieldContext___Directive_isRepeatable(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Directive", field.Name)
 		},
@@ -1217,8 +1217,8 @@ func (ec *executionContext) fieldContext___Schema_directives(ctx context.Context
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_kind(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_kind(ctx, field)
+func ___Type_kind(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_kind(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1245,7 +1245,7 @@ func (ec *executionContext) ___Type_kind(ctx context.Context, field graphql.Coll
 	return ec.marshalN__TypeKind2string(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_kind(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_kind(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1258,8 +1258,8 @@ func (ec *executionContext) fieldContext___Type_kind(ctx context.Context, field 
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_name(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_name(ctx, field)
+func ___Type_name(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_name(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1283,7 +1283,7 @@ func (ec *executionContext) ___Type_name(ctx context.Context, field graphql.Coll
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_name(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_name(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1296,8 +1296,8 @@ func (ec *executionContext) fieldContext___Type_name(ctx context.Context, field 
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_description(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_description(ctx, field)
+func ___Type_description(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_description(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1321,7 +1321,7 @@ func (ec *executionContext) ___Type_description(ctx context.Context, field graph
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_description(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_description(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1334,8 +1334,8 @@ func (ec *executionContext) fieldContext___Type_description(ctx context.Context,
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_fields(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_fields(ctx, field)
+func ___Type_fields(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_fields(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1359,7 +1359,7 @@ func (ec *executionContext) ___Type_fields(ctx context.Context, field graphql.Co
 	return ec.marshalO__Field2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐFieldᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_fields(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_fields(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1368,17 +1368,17 @@ func (ec *executionContext) fieldContext___Type_fields(ctx context.Context, fiel
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "name":
-				return ec.fieldContext___Field_name(ctx, field)
+				return fieldContext___Field_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Field_description(ctx, field)
+				return fieldContext___Field_description(ctx, ec, field)
 			case "args":
-				return ec.fieldContext___Field_args(ctx, field)
+				return fieldContext___Field_args(ctx, ec, field)
 			case "type":
-				return ec.fieldContext___Field_type(ctx, field)
+				return fieldContext___Field_type(ctx, ec, field)
 			case "isDeprecated":
-				return ec.fieldContext___Field_isDeprecated(ctx, field)
+				return fieldContext___Field_isDeprecated(ctx, ec, field)
 			case "deprecationReason":
-				return ec.fieldContext___Field_deprecationReason(ctx, field)
+				return fieldContext___Field_deprecationReason(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Field", field.Name)
 		},
@@ -1397,8 +1397,8 @@ func (ec *executionContext) fieldContext___Type_fields(ctx context.Context, fiel
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_interfaces(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_interfaces(ctx, field)
+func ___Type_interfaces(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_interfaces(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1422,7 +1422,7 @@ func (ec *executionContext) ___Type_interfaces(ctx context.Context, field graphq
 	return ec.marshalO__Type2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐTypeᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_interfaces(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_interfaces(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1431,25 +1431,25 @@ func (ec *executionContext) fieldContext___Type_interfaces(ctx context.Context, 
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -1457,8 +1457,8 @@ func (ec *executionContext) fieldContext___Type_interfaces(ctx context.Context, 
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_possibleTypes(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_possibleTypes(ctx, field)
+func ___Type_possibleTypes(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_possibleTypes(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1482,7 +1482,7 @@ func (ec *executionContext) ___Type_possibleTypes(ctx context.Context, field gra
 	return ec.marshalO__Type2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐTypeᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_possibleTypes(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_possibleTypes(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1491,25 +1491,25 @@ func (ec *executionContext) fieldContext___Type_possibleTypes(ctx context.Contex
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -1517,8 +1517,8 @@ func (ec *executionContext) fieldContext___Type_possibleTypes(ctx context.Contex
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_enumValues(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_enumValues(ctx, field)
+func ___Type_enumValues(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_enumValues(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1542,7 +1542,7 @@ func (ec *executionContext) ___Type_enumValues(ctx context.Context, field graphq
 	return ec.marshalO__EnumValue2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐEnumValueᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_enumValues(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_enumValues(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1551,13 +1551,13 @@ func (ec *executionContext) fieldContext___Type_enumValues(ctx context.Context, 
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "name":
-				return ec.fieldContext___EnumValue_name(ctx, field)
+				return fieldContext___EnumValue_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___EnumValue_description(ctx, field)
+				return fieldContext___EnumValue_description(ctx, ec, field)
 			case "isDeprecated":
-				return ec.fieldContext___EnumValue_isDeprecated(ctx, field)
+				return fieldContext___EnumValue_isDeprecated(ctx, ec, field)
 			case "deprecationReason":
-				return ec.fieldContext___EnumValue_deprecationReason(ctx, field)
+				return fieldContext___EnumValue_deprecationReason(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __EnumValue", field.Name)
 		},
@@ -1576,8 +1576,8 @@ func (ec *executionContext) fieldContext___Type_enumValues(ctx context.Context, 
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_inputFields(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_inputFields(ctx, field)
+func ___Type_inputFields(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_inputFields(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1601,7 +1601,7 @@ func (ec *executionContext) ___Type_inputFields(ctx context.Context, field graph
 	return ec.marshalO__InputValue2ᚕgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐInputValueᚄ(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_inputFields(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_inputFields(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1610,13 +1610,13 @@ func (ec *executionContext) fieldContext___Type_inputFields(ctx context.Context,
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "name":
-				return ec.fieldContext___InputValue_name(ctx, field)
+				return fieldContext___InputValue_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___InputValue_description(ctx, field)
+				return fieldContext___InputValue_description(ctx, ec, field)
 			case "type":
-				return ec.fieldContext___InputValue_type(ctx, field)
+				return fieldContext___InputValue_type(ctx, ec, field)
 			case "defaultValue":
-				return ec.fieldContext___InputValue_defaultValue(ctx, field)
+				return fieldContext___InputValue_defaultValue(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __InputValue", field.Name)
 		},
@@ -1624,8 +1624,8 @@ func (ec *executionContext) fieldContext___Type_inputFields(ctx context.Context,
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_ofType(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_ofType(ctx, field)
+func ___Type_ofType(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_ofType(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1649,7 +1649,7 @@ func (ec *executionContext) ___Type_ofType(ctx context.Context, field graphql.Co
 	return ec.marshalO__Type2ᚖgithubᚗcomᚋ99designsᚋgqlgenᚋgraphqlᚋintrospectionᚐType(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_ofType(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_ofType(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1658,25 +1658,25 @@ func (ec *executionContext) fieldContext___Type_ofType(ctx context.Context, fiel
 		Child: func(ctx context.Context, field graphql.CollectedField) (*graphql.FieldContext, error) {
 			switch field.Name {
 			case "kind":
-				return ec.fieldContext___Type_kind(ctx, field)
+				return fieldContext___Type_kind(ctx, ec, field)
 			case "name":
-				return ec.fieldContext___Type_name(ctx, field)
+				return fieldContext___Type_name(ctx, ec, field)
 			case "description":
-				return ec.fieldContext___Type_description(ctx, field)
+				return fieldContext___Type_description(ctx, ec, field)
 			case "fields":
-				return ec.fieldContext___Type_fields(ctx, field)
+				return fieldContext___Type_fields(ctx, ec, field)
 			case "interfaces":
-				return ec.fieldContext___Type_interfaces(ctx, field)
+				return fieldContext___Type_interfaces(ctx, ec, field)
 			case "possibleTypes":
-				return ec.fieldContext___Type_possibleTypes(ctx, field)
+				return fieldContext___Type_possibleTypes(ctx, ec, field)
 			case "enumValues":
-				return ec.fieldContext___Type_enumValues(ctx, field)
+				return fieldContext___Type_enumValues(ctx, ec, field)
 			case "inputFields":
-				return ec.fieldContext___Type_inputFields(ctx, field)
+				return fieldContext___Type_inputFields(ctx, ec, field)
 			case "ofType":
-				return ec.fieldContext___Type_ofType(ctx, field)
+				return fieldContext___Type_ofType(ctx, ec, field)
 			case "specifiedByURL":
-				return ec.fieldContext___Type_specifiedByURL(ctx, field)
+				return fieldContext___Type_specifiedByURL(ctx, ec, field)
 			}
 			return nil, fmt.Errorf("no field named %q was found under type __Type", field.Name)
 		},
@@ -1684,8 +1684,8 @@ func (ec *executionContext) fieldContext___Type_ofType(ctx context.Context, fiel
 	return fc, nil
 }
 
-func (ec *executionContext) ___Type_specifiedByURL(ctx context.Context, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
-	fc, err := ec.fieldContext___Type_specifiedByURL(ctx, field)
+func ___Type_specifiedByURL(ctx context.Context, ec *executionContext, field graphql.CollectedField, obj *introspection.Type) (ret graphql.Marshaler) {
+	fc, err := fieldContext___Type_specifiedByURL(ctx, ec, field)
 	if err != nil {
 		return graphql.Null
 	}
@@ -1709,7 +1709,7 @@ func (ec *executionContext) ___Type_specifiedByURL(ctx context.Context, field gr
 	return ec.marshalOString2ᚖstring(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) fieldContext___Type_specifiedByURL(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
+func fieldContext___Type_specifiedByURL(ctx context.Context, ec *executionContext, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
 	fc = &graphql.FieldContext{
 		Object:     "__Type",
 		Field:      field,
@@ -1746,32 +1746,32 @@ func (ec *executionContext) ___Directive(ctx context.Context, sel ast.SelectionS
 			out.Values[i] = graphql.MarshalString("__Directive")
 		case "name":
 
-			out.Values[i] = ec.___Directive_name(ctx, field, obj)
+			out.Values[i] = ___Directive_name(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "description":
 
-			out.Values[i] = ec.___Directive_description(ctx, field, obj)
+			out.Values[i] = ___Directive_description(ctx, ec, field, obj)
 
 		case "locations":
 
-			out.Values[i] = ec.___Directive_locations(ctx, field, obj)
+			out.Values[i] = ___Directive_locations(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "args":
 
-			out.Values[i] = ec.___Directive_args(ctx, field, obj)
+			out.Values[i] = ___Directive_args(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "isRepeatable":
 
-			out.Values[i] = ec.___Directive_isRepeatable(ctx, field, obj)
+			out.Values[i] = ___Directive_isRepeatable(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -1799,25 +1799,25 @@ func (ec *executionContext) ___EnumValue(ctx context.Context, sel ast.SelectionS
 			out.Values[i] = graphql.MarshalString("__EnumValue")
 		case "name":
 
-			out.Values[i] = ec.___EnumValue_name(ctx, field, obj)
+			out.Values[i] = ___EnumValue_name(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "description":
 
-			out.Values[i] = ec.___EnumValue_description(ctx, field, obj)
+			out.Values[i] = ___EnumValue_description(ctx, ec, field, obj)
 
 		case "isDeprecated":
 
-			out.Values[i] = ec.___EnumValue_isDeprecated(ctx, field, obj)
+			out.Values[i] = ___EnumValue_isDeprecated(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "deprecationReason":
 
-			out.Values[i] = ec.___EnumValue_deprecationReason(ctx, field, obj)
+			out.Values[i] = ___EnumValue_deprecationReason(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
@@ -1842,39 +1842,39 @@ func (ec *executionContext) ___Field(ctx context.Context, sel ast.SelectionSet, 
 			out.Values[i] = graphql.MarshalString("__Field")
 		case "name":
 
-			out.Values[i] = ec.___Field_name(ctx, field, obj)
+			out.Values[i] = ___Field_name(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "description":
 
-			out.Values[i] = ec.___Field_description(ctx, field, obj)
+			out.Values[i] = ___Field_description(ctx, ec, field, obj)
 
 		case "args":
 
-			out.Values[i] = ec.___Field_args(ctx, field, obj)
+			out.Values[i] = ___Field_args(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "type":
 
-			out.Values[i] = ec.___Field_type(ctx, field, obj)
+			out.Values[i] = ___Field_type(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "isDeprecated":
 
-			out.Values[i] = ec.___Field_isDeprecated(ctx, field, obj)
+			out.Values[i] = ___Field_isDeprecated(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "deprecationReason":
 
-			out.Values[i] = ec.___Field_deprecationReason(ctx, field, obj)
+			out.Values[i] = ___Field_deprecationReason(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
@@ -1899,25 +1899,25 @@ func (ec *executionContext) ___InputValue(ctx context.Context, sel ast.Selection
 			out.Values[i] = graphql.MarshalString("__InputValue")
 		case "name":
 
-			out.Values[i] = ec.___InputValue_name(ctx, field, obj)
+			out.Values[i] = ___InputValue_name(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "description":
 
-			out.Values[i] = ec.___InputValue_description(ctx, field, obj)
+			out.Values[i] = ___InputValue_description(ctx, ec, field, obj)
 
 		case "type":
 
-			out.Values[i] = ec.___InputValue_type(ctx, field, obj)
+			out.Values[i] = ___InputValue_type(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "defaultValue":
 
-			out.Values[i] = ec.___InputValue_defaultValue(ctx, field, obj)
+			out.Values[i] = ___InputValue_defaultValue(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
@@ -1942,33 +1942,33 @@ func (ec *executionContext) ___Schema(ctx context.Context, sel ast.SelectionSet,
 			out.Values[i] = graphql.MarshalString("__Schema")
 		case "description":
 
-			out.Values[i] = ec.___Schema_description(ctx, field, obj)
+			out.Values[i] = ___Schema_description(ctx, ec, field, obj)
 
 		case "types":
 
-			out.Values[i] = ec.___Schema_types(ctx, field, obj)
+			out.Values[i] = ___Schema_types(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "queryType":
 
-			out.Values[i] = ec.___Schema_queryType(ctx, field, obj)
+			out.Values[i] = ___Schema_queryType(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "mutationType":
 
-			out.Values[i] = ec.___Schema_mutationType(ctx, field, obj)
+			out.Values[i] = ___Schema_mutationType(ctx, ec, field, obj)
 
 		case "subscriptionType":
 
-			out.Values[i] = ec.___Schema_subscriptionType(ctx, field, obj)
+			out.Values[i] = ___Schema_subscriptionType(ctx, ec, field, obj)
 
 		case "directives":
 
-			out.Values[i] = ec.___Schema_directives(ctx, field, obj)
+			out.Values[i] = ___Schema_directives(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
@@ -1996,46 +1996,46 @@ func (ec *executionContext) ___Type(ctx context.Context, sel ast.SelectionSet, o
 			out.Values[i] = graphql.MarshalString("__Type")
 		case "kind":
 
-			out.Values[i] = ec.___Type_kind(ctx, field, obj)
+			out.Values[i] = ___Type_kind(ctx, ec, field, obj)
 
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
 		case "name":
 
-			out.Values[i] = ec.___Type_name(ctx, field, obj)
+			out.Values[i] = ___Type_name(ctx, ec, field, obj)
 
 		case "description":
 
-			out.Values[i] = ec.___Type_description(ctx, field, obj)
+			out.Values[i] = ___Type_description(ctx, ec, field, obj)
 
 		case "fields":
 
-			out.Values[i] = ec.___Type_fields(ctx, field, obj)
+			out.Values[i] = ___Type_fields(ctx, ec, field, obj)
 
 		case "interfaces":
 
-			out.Values[i] = ec.___Type_interfaces(ctx, field, obj)
+			out.Values[i] = ___Type_interfaces(ctx, ec, field, obj)
 
 		case "possibleTypes":
 
-			out.Values[i] = ec.___Type_possibleTypes(ctx, field, obj)
+			out.Values[i] = ___Type_possibleTypes(ctx, ec, field, obj)
 
 		case "enumValues":
 
-			out.Values[i] = ec.___Type_enumValues(ctx, field, obj)
+			out.Values[i] = ___Type_enumValues(ctx, ec, field, obj)
 
 		case "inputFields":
 
-			out.Values[i] = ec.___Type_inputFields(ctx, field, obj)
+			out.Values[i] = ___Type_inputFields(ctx, ec, field, obj)
 
 		case "ofType":
 
-			out.Values[i] = ec.___Type_ofType(ctx, field, obj)
+			out.Values[i] = ___Type_ofType(ctx, ec, field, obj)
 
 		case "specifiedByURL":
 
-			out.Values[i] = ec.___Type_specifiedByURL(ctx, field, obj)
+			out.Values[i] = ___Type_specifiedByURL(ctx, ec, field, obj)
 
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
